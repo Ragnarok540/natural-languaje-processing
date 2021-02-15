@@ -8,8 +8,7 @@ results = []
 
 def read_json(content, find):
     if isinstance(content, dict):
-        keys = content.keys()
-        for key in keys:
+        for key in content.keys():
             if key in find:
                 if isinstance(content[key], str):
                     results.append((f'__{key}__', content[key]))
@@ -33,9 +32,13 @@ def create_reqs(raw_reqs):
 
     for tag, text in raw_reqs:
 
-        text = re.sub(' +', ' ', text) # remove extra spaces
+        text = text.replace('\n', '').replace(';', '').replace('<', '').replace('>', '') # remove some chars
+        
+        text = text.replace('“', '"').replace('”', '"').replace(' — ', ', ').replace('’', "'").replace('-', ' ').replace('/', " or ") # replace some chars with alternatives
 
-        text = text.replace('\n', '').replace(';', '').replace('“', '"').replace('”', '"')
+        text = text.replace('i.e.', 'that is').replace('e.g.', 'for example') # replace latin abbreviations
+
+        text = re.sub(' +', ' ', text) # remove extra spaces
 
         if tag == '__list_item__':
             stack.append(text)
