@@ -1,114 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- New document created with EditiX at Tue Jun 07 14:21:44 CEST 2011 -->
-<req_document xsi:schemaLocation="req_document.xsd req_document.xsd"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="req_document.xsd">
 
-    <title>
-        <title>E-GOVERNANCE MISSION MODE PROJECT (MMP)</title>
-        <title>CRIME &amp; CRIMINAL TRACKING NETWORK AND SYSTEMS (CCTNS)</title>
-        <title>FUNCTIONAL REQUIREMENTS SPECIFICATION V1.0 (DRAFT)</title>
-        <title>MINISTRY OF HOME AFFAIRS GOVERNMENT OF INDIA</title>
-    </title>
-
-    <version>1.0</version>
-
-    <p id="1">
-        <title>
-    INTRODUCTION
-        </title>
-        <text_body>
-        The Functional Requirements Specifications (FRS) report provides the detailed description of the functionalities required for the first version of the CCTNS. The key guiding principle behind the functional design of CCTNS V1.0 is to focus on the critical functionality that provides value to the police personnel at the cutting edge which in turn can improve the outcomes in the areas of “Investigation of Crime” and “Detection of Criminals”.
-        </text_body>
-    </p>
-
-    <p id="2">
-        <title>
-    FUNCTIONAL OVERVIEW
-        </title>
-        <text_body>
-        CCTNS V1.0 functionality is designed to focus on delivering value to IOs, records room staff and citizens within the broad crime investigation area. Based on the guiding principles stated above, nine different function blocks have been identified and the detailed functionality of each block was determined.
-        </text_body>
-
-    </p>
-
-    <p id="3">
-        <title>
-    DESCRIPTION OF THE MODULES AND FUNCTIONAL REQUIREMENTS
-        </title>
-        <text_body>
-       The functionality of the CCTNS application is focused on providing value to the police personnel, especially the officers operating at the cutting edge and easing the day to day operations of the police function.
-        </text_body>
-        <p id="">
-            <title>
-        Registration
-            </title>
-            <text_body>
-        Citizens can register their complaints with police and then based on the evidence, facts and following investigation, police shall take the complaint forward. The Registration module acts as an interface between the police and citizens and it eases the approach, interaction and information exchange between police and complainants.
-            </text_body>
-        </p>
-        <p id="">
-            <title>
-        Investigation
-            </title>
-            <text_body>        
-        After a complaint is initiated, police initiates the investigation process. The Investigation module of the CCTNS facilitates the investigation process and introduces operational efficiencies by automating most of the tasks that take place after initial entries are made during Registration.
-            </text_body>
-        </p>
-        <p id="">
-            <title>
-        Prosecution
-            </title>
-            <text_body>
-        Interfacing with the courts during the prosecution of cases is an integral part of the responsibilities of police personnel. A designated constable from each police station constantly interfaces with the courts. The Prosecution module of the CCTNS aids this interfacing by providing a platform to record entries of the court interactions.       
-            </text_body>
-        </p>
-
-        <p id="">
-            <title>
-        Search
-            </title>
-            <text_body>
-        The Search module of the CCTNS gives police personnel the ability to execute a basic or advanced search on cases. Using the search functionality, police personnel can search for a particular person, type of crime, modus operandi, property etc. It also gives the user the ability to customize the results view by criminal/accused or by cases. It makes reporting easy for police by enabling them to execute different types of queries such as monthly reporting, RTI related etc.        
-            </text_body>
-        </p>
-
-        <p id="">
-            <title>
-        Citizen Interface
-            </title>
-            <text_body>
-        The Citizen Interface module of the CCTNS acts as a conduit for the information exchange between citizens and police units/personnel. Citizens can use it as a tool to get information or acknowledgements from police. The police in turn can use it to respond to citizens with very little turnaround time. It improves overall productivity by helping citizens and police to cut short the drudgery of large amounts of paperwork.        
-            </text_body>
-        </p>
-
-        <p id="">
-            <title>
-        Navigation
-            </title>
-            <text_body>
-        The Navigation module of the CCTNS provides role based landing pages which help in navigating through the CCTNS application. It shows information such as cases assigned, alerts, pending tasks etc hence helping police personnel to plan better and execute with greater efficiency.        
-            </text_body>
-        </p>
-
-        <p id="">
-            <title>
-        Application Configuration
-            </title>
-            <text_body>
-        The Configuration module of the CCTNS helps keep the application configured according to the states’ requirements in addition to keeping data elements/rules up to date. With a proper configuration, information such as act and sections, state specific data, castes, tribes, property information etc. can be created updated and deleted.
-        The functional requirements for each of the modules are provided as A1 to A7 in separate enclosures.        
-            </text_body>
-        </p>
-    </p>
+<req_document>
 
     <p id="4">
         <title>
     NON-FUNCTIONAL REQUIREMENTS
         </title>
-        <text_body>
-        The non-functional requirements specify the qualitative attributes such as user-friendliness and performance of the system that are critical for the increased user-acceptance of the application.
-        </text_body>
         <p id="">
             <title>
         Help Module
@@ -118,16 +15,9 @@
                 The solution should provide detailed context-sensitive help material for all the possible actions and scenarios on all user interfaces in the application.
                 </text_body>
             </req>
-            <req id="2">
-                <text_body>
-                The solution should provide detailed context-sensitive help material for all the possible actions and scenarios on all user interfaces in the application.
-                </text_body>
-            </req>
         </p>
         <p id="">
-            <title>
 
-            </title>
             <req id="1">
                 <text_body>
                 The solution should provide an interface for the user to log any defects or enhancement requests on the application and track thereafter.
@@ -161,15 +51,7 @@
             </title>
             <req id="1">
                 <text_body>
-                An audit trail is a record of actions taken by either the user or the system triggers. This includes actions taken by users or Administrators, or actions initiated automatically by the system as a result of system parameters. The System must keep an unalterable audit trail capable of automatically capturing and storing information about:
-                    <itemize>
-                        <item>All the actions (create/read/update/delete) that are taken upon the critical entities (case, suspect, property,...) in the system
-                        </item>
-                        <item>The user initiating and or carrying out the action;</item>
-                        <item>The date and time of the event.</item>
-                        <item>Administrative parameters</item>
-                    </itemize>
-                The word “unalterable” is to mean that the audit trail data cannot be modified in any way or deleted by any user; it may be subject to re-department and copying to removable media if required, so long as its contents remain unchanged.
+                The System must keep an unalterable audit trail capable of automatically capturing and storing information.
                 </text_body>
             </req>
             <req id="2">
@@ -218,11 +100,6 @@
             <title>
         Access Module
             </title>
-            <p id="">
-                <text_body>
-        The requirements specify the requirements to control the user access to correspondences, files, and records and various functionalities provided within the system.
-                </text_body>
-            </p>
 
             <req id="1">
                 <text_body>
@@ -256,14 +133,8 @@
             </req>
             <req id="7">
                 <text_body>
-            If a user requests access to, or searches for, a case which he does not have the right to access, the System must provide one of the following responses (selectable at configuration time):
-                    <itemize>
-                        <item>display title and metadata;</item>
-                        <item>display the existence of a case but not its title or other metadata;</item>
-                        <item>do not display any case information or indicate its existence in any way.</item>
-                    </itemize>
-            These options are presented in order of increasing security. Note that the requirement in the third option (i.e. the most stringent) implies that the System must not include such cases in any count of search results; this level of security is normally appropriate for cases dealing with matters such as national security.
-                </text_body>
+            If a user requests access to, or searches for, a case which he does not have the right to access, the System must provide one of the following responses
+               </text_body>
             </req>
             <req id="8">
                 <text_body>
@@ -319,12 +190,8 @@
             </req>
             <req id="7">
                 <text_body>
-            The System must allow persistent defaults for data entry where desirable. These defaults should include:
-                    <itemize>
-                        <item>user-definable values;</item>
-                        <item>values same as previous item;</item>
-                        <item>values derived from context, e.g. date, file reference, user identifier;</item>
-                    </itemize>
+            The System must allow persistent defaults for data entry where desirable.
+
                 </text_body>
             </req>
             <req id="8">
@@ -334,13 +201,7 @@
             </req>
             <req id="9">
                 <text_body>
-           Where the System employs a graphical user interface, it must allow users to customise it. Customisation should include, but need not be limited to the following changes:
-                    <itemize>
-                        <item>menu contents;</item>
-                        <item>layout of screens;</item>
-                        <item>use of function keys;</item>
-                        <item>on-screen colours, fonts and font sizes;</item>
-                    </itemize>
+           Where the System employs a graphical user interface, it must allow users to customise it.
                 </text_body>
             </req>
         </p>
@@ -361,8 +222,22 @@
             </req>
             <req id="3">
                 <text_body>
-            ICT accessibility: ISO 9241-20 shall be the standard for guidance on ICT accessibility. Application user interfaces to meet its requirements and recommendations. Software accessibility ISO 9241-171 shall be the standard for guidance on software accessibility. User interfaces should meet its requirements and recommendations. Content accessibility WCAG 1.0 shall be the standard used for guidance on content accessibility. The application logo to be available on all pages as a link to the home page.
+             Content accessibility WCAG 1.0 shall be the standard used for guidance on content accessibility. 
                 </text_body>
+
+                <text_body>
+                    Software accessibility ISO 9241-171 shall be the standard for guidance on software accessibility. 
+                </text_body>
+
+                <text_body>
+                    ICT accessibility: ISO 9241-20 shall be the standard for guidance on ICT accessibility. 
+                </text_body>
+                
+                <text_body>
+                    The application logo to be available on all pages as a link to the home page.
+                </text_body>
+                
+
             </req>
             <req id="4">
                 <text_body>
@@ -461,7 +336,7 @@
             </req>
             <req id="23">
                 <text_body>
-           Distinguishable within-page links: Within-page links should be clearly distinguishable from other links that lead to a different page. EX. Within-page links are shown with dashed rather than solid underlines
+           Distinguishable within-page links: Within-page links should be clearly distinguishable from other links that lead to a different page. Within-page links are shown with dashed rather than solid underlines
                 </text_body>
             </req>
             <req id="24">
@@ -546,7 +421,7 @@
             </req>
             <req id="40">
                 <text_body>
-           Consistency between navigation components and content: If navigation components (or overviews) are shown in conjunction with associated content, consistency between the navigation component and the content shown should be maintained by indicating in the navigation component (e.g. highlighting) the topic currently visible in the content area.
+           Consistency between navigation components and content: If navigation components are shown in conjunction with associated content, consistency between the navigation component and the content shown should be maintained by indicating in the navigation component the topic currently visible in the content area.
                 </text_body>
             </req>
             <req id="41">
@@ -556,8 +431,18 @@
             </req>
             <req id="42">
                 <text_body>
-           Individualization and user adaptation : Adapting the content and the navigation of a user interface to individual users or user groups can be a useful mechanism for providing information that is of interest to the users and for making access to relevant information more efficient. User adaptation can also be important for making the user interface more accessible. Different approaches can be used for achieving these goals, like providing users with means for customizing the user interface to their personal needs i.e. individualization designing content and navigation differently for varying user groups or roles i.e. such as employees of different levels, citizens etc, monitoring the user’s behaviour and adapting to the user’s goals that are inferred from the behaviour observed, recommending information that is potentially more relevant or interesting to the specific user, based on the behaviour of all users or a user group.
+           Individualization and user adaptation : Adapting the content and the navigation of a user interface to individual users or user groups can be a useful mechanism for providing information that is of interest to the users and for making access to relevant information more efficient. 
+           
                 </text_body>
+
+                <text_body>
+                    User adaptation can also be important for making the user interface more accessible.
+                </text_body>
+
+                <text_body>
+                    Different approaches can be used for achieving these goals, like providing users with means for customizing the user interface to their personal needs i.e. individualization designing content and navigation differently for varying user groups or roles i.e. such as employees of different levels, citizens etc, monitoring the user’s behaviour and adapting to the user’s goals that are inferred from the behaviour observed, recommending information that is potentially more relevant or interesting to the specific user, based on the behaviour of all users or a user group.
+                </text_body>
+
             </req>
             <req id="43">
                 <text_body>
@@ -658,12 +543,6 @@
         <title>
     FUNCTIONAL ARCHITECTURE RECOMMENDATIONS
         </title>
-        <text_body>
-        The proposed functional architecture is modeled around centralized deployment to facilitate ease of maintenance and leverage advancement in open standards and web technologies.
-        The 3 C’s (Core-Configuration-Customization) forms the guiding principle for the architecture. The functional architecture of the CCTNS solution is given in the figure below. The functional architecture is composed of 4 major components based on SOA principles. Each of the components contains multiple services as defined by Service Definition. The core services, support layer and security and access control components can be deployed as standard components with necessary configuration changes. The customization layer can override and add to the core services based on the specific state requirements and can be plugged with the core services.
-        The deployment of the application will be at state level and will be configured and customized as per the state specific extensions.
-        The systems should be designed with the following broad guidelines:
-        </text_body>
 
         <p id="">
             <title>
@@ -787,98 +666,117 @@
             The system should ensure secure transmission of data over the network and utilize SSL and 2-way digital signatures
                 </text_body>
             </req>
-            <req id="23">
+
+
+            <req>
                 <text_body>
-            The system should ensure high standards of security and access control through:
-                    <enum>
-                        <item>Prevent cross-site scripting</item>
-                        <item>Validate the incoming data / user request</item>
-                        <item>Encode the incoming data / user request</item>
-                        <item>Prevent SQL Injection</item>
-                        <item>Utilize parameterized queries</item>
-                        <item>Sanitize the user-inputs</item>
-                        <item>Validate the data both at the client and server</item>
-                        <item>Do not allow hard delete and perform only soft tagging the row for deletion</item>
-                    </enum>
+                    The system should ensure high standards of security and access control through: Prevent cross-site scripting
                 </text_body>
             </req>
+
+            <req>
+                <text_body>
+                    The system should ensure high standards of security and access control through: Validate the incoming data / user request
+                </text_body>
+            </req>
+
+            <req>
+                <text_body>
+                    The system should ensure high standards of security and access control through: Encode the incoming data / user request
+                </text_body>
+            </req>
+
+            <req>
+                <text_body>
+                    The system should ensure high standards of security and access control through: Prevent SQL Injection
+                </text_body>
+            </req>
+
+            <req>
+                <text_body>
+                    The system should ensure high standards of security and access control through: Utilize parameterized queries
+                </text_body>
+            </req>
+
+
+            <req>
+                <text_body>
+                    The system should ensure high standards of security and access control through: Sanitize the user-inputs
+                </text_body>
+            </req>
+
+            <req>
+                <text_body>
+                    The system should ensure high standards of security and access control through: Validate the data both at the client and server
+                </text_body>
+            </req>
+
+            <req>
+                <text_body>
+                    The system should ensure high standards of security and access control through: Do not allow hard delete and perform only soft tagging the row for deletion
+                </text_body>
+            </req>
+
             <req id="24">
                 <text_body>
-            The system should ensure high scalability and performance through:
-                    <enum>
-                        <item>Use of cache for storing frequent data</item>
-                        <item>Use of AJAX based technology to improve user experience. Aggressive page loading to be considered based on the screen and estimate usage pattern</item>
-                        <item>Leverage Asynchronous HTTP socket capabilities of web server for scalability and performance</item>
-                        <item>Host all the static content (documents, images) on the web server</item>
-                        <item>The search results should be fetched from the database in batches of 10 or 20 maximum
-                    as configured within the application</item>
-                        <item>Display of records on the screen in batches/paged manner</item>
-                        <item>The search should fetch only the fields that need to be displayed to the user. Only when
-                    the user clicks on a particular record to view its further details should a query be fired to
-                    fetch the additional details for this particular record only</item>
-                        <item>A hierarchical cache should be configured and used for caching of results of most frequently used searches</item>
-                        <item>Database Indexes should be applied on the key columns used for searching</item>
-                    </enum>
-                </text_body>
-            </req>
-        </p>
+            The system should ensure high scalability and performance through: Use of cache for storing frequent data
 
+                </text_body>
+
+            </req>
+
+        <req>
+            <text_body>
+                Only when
+                the user clicks on a particular record to view its further details should a query be fired to
+                fetch the additional details for this particular record only
+            </text_body>
+        </req>
+        
+        <req>
+            <text_body>
+                Database Indexes should be applied on the key columns used for searching
+            </text_body>
+        </req>
+        <req>
+            <text_body>
+                A hierarchical cache should be configured and used for caching of results of most frequently used searches
+            </text_body>
+        </req>
+        <req>
+            <text_body>
+                The search should fetch only the fields that need to be displayed to the user. 
+            </text_body>
+        </req>
+        <req>
+            <text_body>
+                The system should ensure high scalability and performance through: Display of records on the screen in batches/paged manner
+            </text_body> 
+        </req>
+        <req>
+            <text_body>
+                The search results should be fetched from the database in batches of 10 or 20 maximum
+                as configured within the application
+            </text_body>
+        </req>
+        <req>
+            <text_body>
+                The system should ensure high scalability and performance through: Host all the static content (documents, images) on the web server
+            </text_body>
+        </req>
+        <req>
+            <text_body>
+                The system should ensure high scalability and performance through: Leverage Asynchronous HTTP socket capabilities of web server for scalability and performance
+            </text_body>
+        </req>
+        <req>
+            <text_body>
+                The system should ensure high scalability and performance through: Use of AJAX based technology to improve user experience. 
+            </text_body>
+
+        </req>
+</p>
 
     </p>
 
 </req_document>
-
-<!--
- 
- 
- <p id="">
- <title>
- 
- </title>
- <text_body>
- </text_body>
- </p>
- 
- 
- 
- <p id="">
- <title>
- 
- </title>
- <req id="1">
- <text_body>
- 
- </text_body>
- </req>
- <req id="2">
- <text_body>
- 
- </text_body>
- </req>
- <req id="3">
- <text_body>
- 
- </text_body>
- </req>
- <req id="4">
- <text_body>
- 
- </text_body>
- </req>
- <req id="5">
- <text_body>
- 
- </text_body>
- </req>
- </p>
- 
- 
- <itemize>
- <item></item>
- <item></item>
- <item></item>
- <item></item>
- </itemize>
- 
- 
- !-->

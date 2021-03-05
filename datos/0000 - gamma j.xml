@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<req_document>
+
+    <p id="1">
+        <title>
+    Introduction
+        </title>
+
+    </p>
+
+    <p id="2">
+        <title>
+    Overall Description
+        </title>
+
+        <p id="2.4">
+            <title>
+        Operating Environment
+            </title>
+            <req id="OE-1">
+                <text_body>
+            Web Store shall operate with the following internet browsers: Microsoft Internet Explorer version 6 and 7, Netscape Communicator Version 4 and 5.
+                </text_body>
+            </req>
+            <req id="OE-2">
+                <text_body>
+            Web Store shall operate on an Intel based system with Slackware Linux 2.6 and Apache Web Server. The operating system is designed by the Yoggie Corporation. Although maintenance documentation will be supplied and the operating system will be tested, the developers of this Web Store are not responsible for the functionality of the operating system.
+                </text_body>
+            </req>
+            <req id="OE-3">
+                <text_body>
+             The system shall use SQL based database to store inventory information.
+                </text_body>
+            </req>
+            <req id="OE-4">
+                <text_body>
+                USB interface and divers are provided by Yoggie Corporation.
+                </text_body>
+            </req>
+        </p>
+        <p id="2.5">
+            <title>
+            Design and Implementation Constraints
+            </title>
+            <req id="CO-1">
+                <text_body>
+                Must use a SQL based database. SQL standard is the most widely used database format. Restricting to SQL allows easy of use and compatibility for Web Store.
+                </text_body>
+            </req>
+            <req id="CO-2">
+                <text_body>
+                Compatibility is only tested and verified for Microsoft Internet Explorer version 6 and 7, Netscape Communicator Version 4 and 5. Other versions may not be 100&#37; compatible. Also other browsers such as Mozilla or Firefox may not be 100&#37; compatible.
+                </text_body>
+            </req>
+
+        </p>
+        <p id="2.6">
+            <title>
+        User Documentation
+            </title>
+            <req id="UD-1">
+                <text_body>
+            Shall install online help for users via the web interface
+                </text_body>
+            </req>
+            <req id="UD-2">
+                <text_body>
+            Shall deliver Operations and Maintenance manual, Users Guide book, and Installation Instructions for the Administrator.
+                </text_body>
+            </req>
+        </p>
+
+    </p>
+
+    <p id="3">
+        <title>
+    System Features
+        </title>
+        <p id="3.1">
+            <title>
+        Customer Accounts
+            </title>
+            <p id="3.1.1">
+
+                <text_body>
+                Customers will be able to create accounts to store their profiles, contact information, purchase history, and confirm orders. Security methods will ensure that customer accounts remain confidential and resistant to tampering.
+                </text_body>
+            </p>
+
+            <p id="3.1.3">
+                <title>
+            Functional Requirements
+                </title>
+                <text_body>
+            Customers will be able to create accounts to store their customer profiles, configure contact information, view their purchase history, and confirm orders. Customers will be able to register, log in, and log out of their accounts. Furthermore, Customer profiles will also include payment information, such as the ability to store credit card information, and address information.
+                </text_body>
+            </p>
+        </p>
+
+        <p id="3.2">
+            <title>
+         Inventory Management
+            </title>
+            <p id="3.2.1">
+
+                <text_body>
+            Inventory management will allow for the placement of products into multi-tiered categories.
+                </text_body>
+            </p>
+
+            <p id="3.2.3">
+                <text_body>
+            Products will be stored in multi-tiered categories; a category can contain sub categories or products. The inventory management will allow for administrators to update the categories, the products placed in categories, and the specific product details.
+                </text_body>
+            </p>
+
+        </p>
+
+        <p id="3.3">
+            <title>
+        Shopping Cart
+            </title>
+            <p id="3.3.1">
+                <text_body>
+            Customers will be able to add and store products for purchase within the shopping cart.
+                </text_body>
+            </p>
+            <p id="3.3.3">
+                <text_body>
+            Customers will also be able to add products into the shopping cart. The shopping cart will clearly display the number of items in the cart, along with the total cost. The customer will also be able to add to or remove products from the shopping cart prior to checkout and order confirmation.
+                </text_body>
+            </p>
+        </p>
+
+        <p id="3.4">
+            <title>
+            Order Confirmation
+            </title>
+            <p id="3.4.1">
+                <text_body>
+            Order confirmation will allow the customer to review their order after checkout prior to confirmation.
+                </text_body>
+            </p>
+            <p id="3.4.3">
+                <text_body>
+                Customers will be able to confirm the order after checkout. If the order is incorrect, the customer will be able to revise and update their order. The customer will then receive a confirmation email with the specific order details.
+                </text_body>
+            </p>
+        </p>
+
+        <p id="3.5">
+            <title>
+            Interface
+            </title>
+            <p id="3.5.1">
+                <title>
+                Description And Priority
+                </title>
+                <text_body>
+                The interface will be presented to the customer in a web browser. The interface must remain consistent among various web browsers and be intuitive to the customer.
+                </text_body>
+            </p>
+            <p id="3.5.3">
+                <title>
+                Functional Requirements
+                </title>
+                <text_body>
+                Customers will be presented with an unambiguous interface to assist in browsing the categories and products. Customers will be able to search for products matching their search criteria. The interface will be compatible with all major web browsers such as Internet Explorer, Mozilla Navigator, Mozilla Firefox, Opera, and Safari.
+                </text_body>
+            </p>
+        </p>
+
+        <p id="3.6">
+            <title>
+            Interface
+            </title>
+            <p id="3.6.1">
+                <title>
+                Description And Priority
+                </title>
+                <text_body>
+                The system will feature an API to allow customers to build custom plug-ins to be able to meet their needs. This is a high priority system feature as it ensures the flexibility of the system to be tailored to specific needs.
+                </text_body>
+            </p>
+            <p id="3.6.3">
+                <title>
+                Functional Requirements
+                </title>
+                <text_body>
+                The system will implement an Application Interface to allow for various plug-ins to interact with the system. The plug-in API will be well documented and specifications will be provided to plug-in developers.
+                </text_body>
+            </p>
+        </p>
+
+    </p>
+
+    <p id="4">
+        <title>
+    External Interface Requirements
+        </title>
+
+        <p id="4.3">
+            <title>
+        Software Interfaces
+            </title>
+            <p id="">
+                <text_body>
+                    WebOrder Browser Interface: 
+                    <description>
+                        <item>The order database of WebOrder will communicate with the account system through a programmatic interface for the billing operations.</item>
+                        <item>Through programmatic interface, WebOrder will transmit information of items ordered by customers to the Inventory management system.</item>
+                    </description>
+                    
+                </text_body>
+            </p>
+
+        </p>
+        <p id="4.4">
+            <text_body>
+                Communications Interfaces: 
+                <description>
+                    <item>The WebOrder system shall send an e-mail confirmation to the customer that the items they ordered will be delivered to the shipping address along with tracking number.</item>
+                    <item>The WebOrder system shall send an e-mail to System Administrator regarding any technical queries from customers or sales people.
+                    </item>
+                </description>
+               
+            </text_body>
+        </p>
+    </p>
+
+    <p id="5">
+        <title>
+    Quality Attribute Requirements
+        </title>
+        <p id="5.1">
+            <title>
+
+            </title>
+            <req id="1">
+                <text_body>
+                Upon the USB being plugged in the system shall be able to be deployed and operational in less than 1 minute.
+                </text_body>
+            </req>
+            <req id="2">
+                <text_body>
+            The system shall be able to handle 1000 customers logged in concurrently at the same time.
+                </text_body>
+            </req>
+            <req id="3">
+                <text_body>
+             The system shall be able to retrieve 200 products per second.
+                </text_body>
+            </req>
+            <req id="4">
+                <text_body>
+            The system shall be able to add product to shopping cart in less than 2ms.
+                </text_body>
+            </req>
+            <req id="5">
+                <text_body>
+            The system shall be able to search for a specified product in less than 1 second.
+                </text_body>
+            </req>
+
+            <req id="6">
+                <text_body>
+             The system shall be able to email customer and vendor in less than 1 second.
+                </text_body>
+            </req>
+            <req id="7">
+                <text_body>
+             The system shall be able to validate credit card in less than 2 seconds.
+                </text_body>
+            </req>
+            <req id="8">
+                <text_body>
+             The system shall be able to acquire shipping charges in less than 2 seconds.
+                </text_body>
+            </req>
+            <req id="9">
+                <text_body>
+             The system shall be able to restore 1000 records per second.
+                </text_body>
+            </req>
+        </p>
+
+        <p id="5.2">
+            <title>
+            Safety Requirements
+            </title>
+            <req id="1">
+                <text_body>
+                The system will do periodic backups through a live internet connection.
+                </text_body>
+            </req>
+
+        </p>
+
+
+        <p id="5.3">
+            <title>
+                Security Requirements
+            </title>
+            <req id="1">
+                <text_body>
+                        The system shall validate credit cards against fraud.
+                </text_body>
+            </req>
+            <req id="2">
+                <text_body>
+                    The system shall encrypt all sensitive information via https.
+                </text_body>
+            </req>
+            <req id="3">
+                <text_body>
+                    The system shall encrypt all customer data in database.
+                </text_body>
+            </req>
+            <req id="4">
+                <text_body>
+                    The system shall auto detect IP DOS attacks and block IP automatically.
+                </text_body>
+            </req>
+            <req id="5">
+                <text_body>
+                    The system shall detect consecutive failed login attempts.
+                </text_body>
+            </req>
+
+            <req id="6">
+                <text_body>
+                    The system shall be protected by open source firewall called Firestarter.
+                </text_body>
+            </req>
+
+        </p>
+        <p id="5.4">
+            <title>
+                    Availability Requirements
+            </title>
+            <req id="1">
+                <text_body>
+                        The system shall have an availability of 99.99&#37;.
+                </text_body>
+            </req>
+        </p>
+        <p id="5.5">
+            <title>
+                        Efficiency Requirements
+            </title>
+            <req id="1">
+                <text_body>
+                                The system shall perform searches via Dijkstra's shortest path algorithm.
+                </text_body>
+            </req>
+            <req id="2">
+                <text_body>
+                                For returning customers, the system shall validate 'existing' credit card in system
+                                after each log in.
+                </text_body>
+            </req>
+            <req id="3">
+                <text_body>
+                            The system shall automatically compress image files that are too large in size.
+                </text_body>
+            </req>
+            <req id="4">
+                <text_body>
+                            The system will employ on demand asynchronous loading for faster execution of pages.
+                </text_body>
+            </req>
+            <req id="5">
+                <text_body>
+                            The system shall validate email address existence.
+                </text_body>
+            </req>
+
+        </p>
+        <p id="5.6">
+            <title>
+                            Usability Requirements
+            </title>
+            <req id="1">
+                <text_body>
+                                The system shall be easy to use
+                </text_body>
+            </req>
+            <req id="2">
+                <text_body>
+                                The system shall be easy to learn
+                </text_body>
+            </req>
+            <req id="3">
+                <text_body>
+                                 The system shall utilize help bubbles to assist managers, customers, and administrators
+                </text_body>
+            </req>
+            <req id="4">
+                <text_body>
+                                 The system shall employ easy to locate buttons
+                </text_body>
+            </req>
+            <req id="5">
+                <text_body>
+                                 The system shall prompt customer with friend easy to read error messages.
+                </text_body>
+            </req>
+
+            <req id="6">
+                <text_body>
+                                The system shall utilize consistent symbols and colors for clear notifications.
+                </text_body>
+            </req>
+            <p id="5.7">
+                <title>
+                                Maintainability Requirements
+                </title>
+                <req id="1">
+                    <text_body>
+                                        The system shall utilize interchangeable plugins.
+                    </text_body>
+                </req>
+                <req id="2">
+                    <text_body>
+                                     The system shall be easily updatable for fixes and patches.
+                    </text_body>
+                </req>
+                <req id="3">
+                    <text_body>
+                                    The system shall create logs of all changes, updates, or fixes that are done to the site.
+                    </text_body>
+                </req>
+                <req id="4">
+                    <text_body>
+                                    The system shall be easy to upgrade.
+                    </text_body>
+                </req>
+            </p>
+
+            <p id="5.8">
+                <title>
+                                    Portability Requirements
+                </title>
+                <req id="1">
+                    <text_body>
+                                        The system shall be extremely portable via the usb drive.
+                    </text_body>
+                </req>
+                <req id="2">
+                    <text_body>
+                                        The system shall be easy to migrate or backed up via another usb drive.
+                    </text_body>
+                </req>
+            </p>
+
+            <p id="5.9">
+                <title>
+                                        Testability Requirements
+                </title>
+                <req id="1">
+                    <text_body>
+                                            The system should be able to run under debug mode.
+                    </text_body>
+                </req>
+                <req id="2">
+                    <text_body>
+                                             The system should be able to run test credit card transactions.
+                    </text_body>
+                </req>
+                <req id="3">
+                    <text_body>
+                                            The system should be able to run test shipping orders.
+                    </text_body>
+                </req>
+                <req id="4">
+                    <text_body>
+                                            The system should be able to create test environment of weborder system.
+                    </text_body>
+                </req>
+            </p>
+
+        </p>
+
+    </p>
+
+    <p id="6">
+        <title>
+    Other Requirements
+        </title>
+        <req id="1">
+            <text_body>
+            The system hardware shall be fixed and patched via an internet connection.
+            </text_body>
+        </req>
+        <req id="2">
+            <text_body>
+            Yoggie shall coordinate on future enhancement and features with our
+            organization.
+            </text_body>
+        </req>
+    </p>
+
+</req_document>
