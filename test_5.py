@@ -59,9 +59,7 @@ for epoch in range(10):
     batches = minibatch(examples, size=8)
     # Iterate through minibatches
     for batch in batches:
-        # Each batch is a list of (text, label) but we need to
-        # send separate lists for texts and labels to update().
-        # This is a quick way to split a list of tuples into lists
+        # Update the model with a new batch
         nlp.update(batch, sgd=optimizer, losses=losses)
     print(losses)
 

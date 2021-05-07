@@ -80,19 +80,26 @@ def write_req_file(name: str, reqs: list):
 
 if __name__ == '__main__':
 
-    doc = xml_file_to_dict('datos/0000 - cctns.xml')
-    results = interpret_dict(doc, ['text_body', '#text', 'title'])
-    reqs = create_reqs(results)
-    reqs = break_lines(reqs)
+    reqs = []
 
-    doc = xml_file_to_dict('datos/0000 - gamma j.xml')
+    # doc = xml_file_to_dict('datos/0000 - cctns.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs = create_reqs(results)
+    # reqs = break_lines(reqs)
+
+    # doc = xml_file_to_dict('datos/0000 - gamma j.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs_1 = create_reqs(results, items_are_reqs=True)
+    # reqs += break_lines(reqs_1)
+
+    # doc = xml_file_to_dict('datos/1995 - gemini.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs_1 = create_reqs(results, items_are_reqs=True)
+    # reqs += break_lines(reqs_1)
+
+    doc = xml_file_to_dict('datos/1998 - themas.xml')
     results = interpret_dict(doc, ['text_body', '#text', 'title'])
     reqs_1 = create_reqs(results, items_are_reqs=True)
     reqs += break_lines(reqs_1)
 
-    doc = xml_file_to_dict('datos/1995 - gemini.xml')
-    results = interpret_dict(doc, ['text_body', '#text', 'title'])
-    reqs_1 = create_reqs(results, items_are_reqs=True)
-    reqs += break_lines(reqs_1)
-
-    write_req_file('reqs.txt', reqs)
+    write_req_file('reqs_new.txt', reqs)

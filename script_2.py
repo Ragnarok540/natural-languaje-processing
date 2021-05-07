@@ -13,7 +13,7 @@ def num_linkages(requirement: str) -> int:
 result = []
 reqs = []
 
-with open('reqs.txt') as f:
+with open('reqs_new.txt') as f:
     req = f.readline()
     reqs.append(req)
     count = 1
@@ -26,7 +26,7 @@ with open('reqs.txt') as f:
         count += 1
         
 
-with open('tags.txt', 'w') as f:
+with open('tags_new.txt', 'w') as f:
     counter = 0
     for tag in result:
         f.write(f'{tag}~{reqs[counter]}')
