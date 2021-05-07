@@ -1,0 +1,217 @@
+
+ <req_document>
+ 
+     <p id="4.">
+         <title>REQUIREMENTS</title>
+         <p id="4.1">
+             <title>REQUIRED STATES AND MODES</title>
+             <text_body>
+                 <itemize>
+                     <item>Environmental Mode: This is the real-time operations that must react to varying 
+ degrees of readiness to full scale wartime operations such as crisis planning with
+  the use of heterogeneous data types and sources, transfer capabilities, data management
+  services.</item>
+                     <item>XML Services shall be segmented. COE sponsors shall adhere 
+ to compliance level requirements described in the I&amp;RTS. </item>
+                     <item>In the fixed (static) mode of operation (base or data processing megacenter), the
+  data management services shall have the capability of being tuned by on-site personnel
+  to adjust for varying workloads and sizes of associated databases. These workloads and
+  databases are expected to change more frequently and to a greater extent than for 
+ processing associated with deployed units</item>
+                     <item>In a changing (dynamic) environment, such as with deployed units, the workload
+  and database sizes may be more predetermined (given a more precise mission) and 
+ require access to fewer data management administrative capabilities than needed in a 
+ fixed environment. The XS shall have the ability to redefine or reset names of connect 
+ descriptors to database server instances. Connect descriptors are fully qualified object 
+ names and include address (protocol/host/port) and instance name. </item>
+                     <item>In a degraded communications environment, there is a need, for example, to 
+ be able to reset session time-out values if the data management services are being
+  accessed by users affected by the communications degradation. At a minimum, the 
+ session time-out values shall be user definable and be able to be reset prior to 
+ initialization of a user session. The goal is to provide the option of dynamically changing
+ session time values based on current communications performance identified by 
+ capabilities of the network management or DBMS. </item>
+                     <item>End User Mode: Portion of XS services shall be used by various classes of
+  users: data consumers, data and database managers, network information infrastructure
+  resource managers. Some of these uses of the data management services will entail 
+ unique requirements that shall be fulfilled within the capability of XS services.</item>
+                     <item>Maintenance Mode: This mode includes modification and/or addition of 
+ application data segments, user permission, privileges, and restructuring storage
+ and memory areas. In addition, maintenance also shall pertain to shutdown, open 
+ not-mounted and online/off-line implementations, modifications, upgrade, or other 
+ related actions. The data management services shall support managing various types
+  of data, database architectures and platforms that includes hardware and software at
+  the specified sites. </item>
+                     <item>In support of training activities, the data management services 
+ shall provide for the same processing as would be encountered in a production
+  environment. However, access to the database may be via a training application 
+ access to the DBMS rather than from the production mission application.</item>
+                 </itemize>
+             </text_body>
+         </p>
+         <p id="4.2">
+             <title>XML SERVICES CAPABILITY REQUIREMENTS</title>
+ 
+             <p id="Figure 3.2-1">
+                 <p id="1">
+                     <title>Register Terms and Structures (e.g., tags, DTDs, DCDs)</title>
+                     <text_body>
+                         <itemize>
+                             <item>
+ Producer services A producer is an agent that contributes metadata for inclusion into an
+  XML Registry for the purposes of ensuring maximum semantic understanding of a term 
+ as it appears in an XML document. To contribute metadata to a registry, the producer 
+ must be able to receive XML registry forms, submit metadata and the related information
+  resource artifacts, and notify.
+                                 <itemize>
+                                     <item>Produce and display submittal forms as part of the Information Resource
+  Submittal Package from the web containing the following Information Resource
+  artifacts: XML Tag Specification, XML Spec (i.e. DTD, DCD etc.), Sample of XML document
+  of the tag to be submitted. The Package is to be compressed and emailed or sent ftp to 
+ an addressee.</item>
+                                     <item>Download Information Resource Submittal Package from the web containing 
+ forms, instructions, and tools for submission to XML Registry.</item>
+                                     <item>Submit prescribed metadata related to information resource type, information 
+ resource association, status code, data types specified and other related information 
+ specified in Appendix A within a combination of forms. These forms are part of the 
+ Information Resource Submittal Package containing the following Information Resource
+  artifacts: XML Tag Specification, XML Spec (i.e. DTD, DCD etc.), Sample of XML
+  document of the tag to be submitted. The Package is to be compressed and emailed 
+ or sent ftp to an addressee.</item>
+                                 </itemize>
+                             </item>
+                             <item>
+ A consumer examines a registry to select a tag structure for reuse in one
+  or more applications that will exchange data according to a pre-defined agreement.
+                                 <itemize>
+                                     
+                                     <item>View the XML Tags with the following relationships:
+                                         <itemize>
+                                             <item>Ancestor/ Descendant relationship: Provide the capability
+  to view a Tag’s origin </item>
+                                             <item>Uses/Used by relationship: Provide the capability to view a complex 
+ Container Tag’s parent/child relationship</item>
+                                             <item>Data type information: Provide the capability to view a tag’s data type
+  and related information.</item>
+                                             <item>Versioning relationship: Provide the capability to view an Information 
+ resource’s versions</item>
+                                             <item>Reference Sets: Provide the capability to view text related to the domai
+  values or the related reference set</item>
+                                             <item>Amplifying information: Provide the capability to view other information 
+ resources such as ERwin models, DTDs, documents, etc., which describe or 
+ otherwise provide amplifying information.</item>
+                                             <item>View the XML Tags via a tree/hierarchy structure or tabular format.</item>
+                                             <item>View the XML Tags by giving the user multiple search 
+ options to find a specific Tag.</item>
+                                             <item>View the XML tags by giving the user the search option to find all 
+ tags of a given subscriber/author.</item>
+                                         </itemize>
+                                     </item>
+                                     <item>Each Information Resource will have its own web page to allow the user 
+ to view all pertinent information, according to its information resource type.</item>
+                                     <item>View the Information Resource Submittal Package containing the following 
+ Information Resource artifacts: XML Tag Specification, XML Spec 
+ (i.e. DTD, DCD etc.), Sample of XML document of the tag to be submitted.</item>
+                                     <item>Display an XML Tag Specification form to the author of a given information 
+ resource. This XML Tag Spec will be used for inputting the requesting information
+  for a specific Information Resource. </item>
+                                     <item>Provide capabilities to download the XML Tags or other
+ selected Information Resources.</item>
+                                     <item>Catalog entities and attributes within servers to enable browsing, 
+ searching, retrieving of data related to XML sources. </item>
+                                     <item>Process ANSI standard SQL as specified in FIPS PUB 127-2</item>
+                                     <item>Establish rules to ensure maximum semantic understanding 
+ of a term as it appears in an XML document</item>
+                                     <item>Provide a capability to subscribe for notification of changes to 
+ Communities of Interest (COE) or Information Resources.</item>
+                                 </itemize>
+                             </item>
+ 
+                             <item>
+ Manager services
+                                 <itemize>
+                                     <item>Establish acceptable naming convention not to be in conflict with the DOD data 
+ standards convention and establish a relationship to other naming conventions.</item>
+                                     <item>Create a naming structure within the COE architecture to express the context 
+ and relationship of the naming convention to other naming conventions 
+ specified in the I&amp;RTS.</item>
+                                     <item>Define a set of metadata tags, information attributed to metadata tags 
+ (meta-metadata) and other related terms for the maintenance 
+ and control of XML tags.</item>
+                                 </itemize>
+                             </item>
+                             <item>
+ Design the schema for an XML document
+                             </item>
+                             <item>
+                                 <itemize>
+                                     <item>Generate a document that includes (by ref or by value) a schema</item>
+                                     <item>Develop scheme to permit dynamic cross-referencing 
+ and indexing of XML objects.</item>
+                                     <item>Disassemble document to materialize different query results
+  into different tree structure</item>
+                                     <item>Transmit sufficient metadata to construct alternate, semantically-valid
+  views (e.g., XSL)</item>
+                                    
+                                 </itemize>
+                             </item>
+ 
+                         </itemize>
+                     </text_body>
+                 </p>
+ 
+             </p>
+         </p>
+         <p id="4.4">
+             <title>REGISTRY SERVICES</title>
+             <text_body>The Registry shall provide standard APIs as specified in Appendix B.</text_body>
+         </p>
+         <p id="4.5">
+             <title>DATA ACCESS SERVICES INTERNAL INTERFACE REQUIREMENTS</title>
+             <text_body>The XS function shall provide standard APIs as specified in Appendix C.</text_body>
+         </p>
+         <p id="4.6">
+             <p id="4.6.1">
+                 <text_body>The XS shall internally interface (transparent to the operator) with the 
+ existing data elements 
+ of the DBIF, DAC, and COTS RDBMS products.</text_body>
+             </p>
+         </p>
+         <p id="4.7">
+             <title>REGISTRY SERVICES ENVIRONMENT REQUIREMENTS</title>
+             <p id="4.7.1">
+                 <text_body>The Registry software shall be portable and required to 
+ execute on COE-compliant platforms.</text_body>
+             </p>
+         </p>
+         <p id="4.8">
+             <title>PERSONNEL-RELATED REQUIREMENTS</title>
+             <text_body>Personnel requirements shall be determined by the developers of 
+ the system in which the XS module is embedded</text_body>
+         </p>
+         <p id="4.9">
+             <title>TRAINING-RELATED REQUIREMENTS</title>
+             <text_body>Training requirements shall be determined by the developers of the 
+ system in which the XS module is embedded.</text_body>
+         </p>
+         <p id="4.10">
+             <title>LOGISTICS-RELATED REQUIREMENTS</title>
+             <text_body>The XS developer is responsible for software maintenance, software 
+ support, and software updates. The DISA Configuration Manager (CM) is responsible 
+ for distribution of the XS 
+ product to system developers.</text_body>
+         </p>
+         <p id="4.11">
+             <title>OTHER REQUIREMENTS</title>
+            
+         </p>
+         <p id="4.12">
+             <title>PACKAGING REQUIREMENTS</title>
+             <text_body>The XS software shall be delivered in accordance with DII COE guidelines.</text_body>
+         </p>
+         <p id="4.13">
+         </p>
+ 
+     </p>
+     
+ </req_document>
