@@ -770,7 +770,7 @@
 3~This control signal shall also provide an indication of the unit's status at the requesting thermostat.
 4780~This process shall recognize the values for the requested heating or cooling unit and the ON or OFF status that is being requested.
 13~The necessary signal to the heating or cooling unit will be generated.
-8~Since the interface to con trol the units has not been defined, the part of this process that will issue the signal is designated as TBD(to be determined).
+8~Since the interface to control the units has not been defined, the part of this process that will issue the signal is designated as TBD(to be determined).
 392~In order to provide an indication of the status of the heating or cooling unit back to the requesting thermostat, this procedure shall output the status information of the heating or cooling unit.
 90~In order to provide an operational history and statistical reports, this process shall generate an event each time a change is made to the status of a heating or cooling unit.
 1646~This ev ent shall contain the identification of the heating or cooling unit whose status is being changed.
@@ -1368,3 +1368,23 @@
 198444~Verification will consist of surveillance of the operation to determine that practices, methods, and procedures are being properly applied product inspection to measure quality of products to be offered for acceptance and product inspection of delivered products to ensure compliance with all the requirements of this specification.
 95~The system will be tested via an integrated program conducted according to the system Master Test Plan, NSWCDD or TR 96 or XXX.
 120~The integrated program consists of three distinct categories, as defined in the Master Test Plan: data link tests, integration tests, and flight tests.
+2~The product runs as a standalone application.
+2~Its user interface uses menus, graphics and sounds.
+6~The product requires the use of a keyboard and a mouse to interface with the user.
+1~It requires a graphical display of at least 800*600 resolution.
+1~The product uses the Qt graphical library.
+44~It must run with all the operating systems that Qt supports.
+1~The user must undo and redo its last thousand actions.
+12~The product must count and display the time that the user uses to play.
+6~The product must count and display the number of the user' asction.
+101~The product must record the score (time and number of counts) of a play associated with the name of a user.
+6~The product must display a window with all the player' scores.
+3~The product generally requires a mouse and a keyboard for input.
+11280~Other pointing and input devices are allowable, provided they provide similar functions to a mouse and keyboard, namely the ability to move a cursor onscreen to select buttons and the ability to type names.
+2~The product uses menus, graphics and sounds.
+3~The hardware and operating system must provide an 800x600 screen resolution.
+4~Sound is not required to play the game.
+8376~The users consist of anyone who wants to play a simple game who knows how to operate a computer, with a beginning level player starting at age 8, up through an advanced level player who could be an adult.
+8~The main window shall provide the following parts : A board, a menu bar
+4~There can be only one user per machine.
+2~The software must be portable to the Windows OS.
