@@ -1388,3 +1388,137 @@
 8~The main window shall provide the following parts : A board, a menu bar
 4~There can be only one user per machine.
 2~The software must be portable to the Windows OS.
+30~System Development: The system will be developed on Oracle 9i platform Front end will be VB (visual basic) Reports will be crystal reports 9
+2280~System design: The system will be user friendly with maximum master table structure with all transaction screens to have drop down selection menus to minimize data entry errors.
+4234~The main data entry screen on claims entry to have drop drown menu from patient's profile selection to medicine cost to have drop down.
+4~Minimize the use of keyboard for any number entry to have a faster transaction data entry.
+66~The system will be easily trainable for the user with minimum computer skill with simple user step by step manual.
+3~Storage efficiency: The structural design of the database will have sequential links with surrogate keys.
+5~The database storage will be highly efficient to manage and avoid empty unused spaced blocked, properly defragmenter on a periodic basis.
+12~This efficiency will have a maximum provision to expand this program beyond the pilot period, if the program requirements remain same.
+10~Security: High intrusion controls will be in place in the system and the database.
+32~Access level controls, various organizational level user setting by including granular model setting.
+126~Barcode: the system will interface with the barcode reader to interface all transaction details for example voucher number verifications, claim form entry and selection of voucher usage by the clients.
+6~Biometrics: the system will interface with the thumbprint reader for verifying claims form used by the clients.
+96~Voucher creation: the voucher numbers are system generated and created with unique identification numbers with security protocols inbuilt.
+2~The created unique numbers are then printed out in the form of barcodes, which will complement (or stuck on the voucher) the voucher.
+140~Then at every level on the voucher cycle this number is captured, on distribution, retail sales, point of treatment, enclosed along with claim forms, at the claims processing and finally for the payment.
+2~Such tracking records will be utilized for reports as well.
+224~Each voucher should have the following properties, which will have subelements to get the batch numbers, voucher numbers, and the project codes.
+1~Project code Group batch code Batch number Voucher number Security code.
+1~The voucher will be created ONLY by the authorized person.
+156~The will be a provision to create a minimum quantity of vouchers at one time (such minimum numbers will be decided by the management team).
+90~Once created vouchers will not be edited or deleted but there will be a provision to withhold any voucher number if the admin team decides to do for any reason.
+2~There will be a provision to amend the validity date of the voucher.
+9~The marketing and sales is the next step and the next module in the system.
+4~This module will take care of following sub modules.
+62~The system will capture the master details of every distributor so that the users can get the details of any distributor and sales details at any time.
+3~Each distributor will have unique code and detailed descriptions such as name, address, locations and type of business etc.
+5~such valid information will help us track information related to sales and distributions.
+4~Following fields will be captured at this master.
+1~All fields with * are mandatory!
+209~The address field will capture the geographical location of the distributor, such as District, SubDistrict, County, SubCounty or Village or Town, road or street.
+171~All the level of details will have a master table in order to update as per the program requirements.
+1~The system will check the duplicated ID for the distributors.
+4~The system can allow the duplicate names of the Distributor.
+12~On capture of any duplicate name the system will give a warning message to have the duplicate name or to change the name.
+224~For better reporting purposes it is better to have a differentiating indicator on the name.
+2~System will have a provision to print the distributor master details.
+162~The distributor screen will have a provision to view the Sales History of a particular distributor with following summary details.
+6~Distributor Name as Report Header and following as the report footer
+408~There will be a provision to select a particular distributor to view the details (for example sales) by double clicking on the grid.
+1~Print option of above report is based on User Login Permission only.
+28~There will be an option for doing the following at every screen.
+60~There will also be a provision for the other users to view the details of a distributor with purchase and sales details.
+6~The system will capture the details of MSIU Salesman this would help the MSIU management team to understand the performance of each Team or salesman.
+9~During every distribution transaction the user should select the name of the sales man listed from Team Master.
+3~The Salesman master should capture following information's.
+20~The sales team master is for the future development of this program, if this program is extended to a countrywide network, this master will help understand and tack sales information.
+2~The system will check the duplicated ID for the salesman and team.
+2~The system can allow the duplicate names of the salesman.
+12~On capture of any duplicate name the system will give a warning message to have the duplicate name or to change the name.
+224~For better reporting purposes it is better to have a differentiating indicator on the name
+7~The system will capture the details of voucher sales between MISU sales team and Distributors.
+16~During the distribution the system will capture the following details, to make Distribution process easily.
+28~With the below details the user can get the details of Distributor wise and Salesman wise and Batch No wise sales details as reports.
+2~The system will generate an autogenerated number as Distribution Invoice No.
+306162~Suppose the distributor or salesman name is not available in the system, then the system has a provision to navigate quickly to its master screen and enter the new Distributor and Salesman details, without closing the present screen.
+2944~While entering the No of vouchers required, the system should automatically pick the Batch No's with voucher No's from the available voucher stock and list the details of each voucher with below information's as a grid format.
+42~The date of distribution will be current (system) date, but the date of sale can be the past dates.
+2~There will be a future date sale validation check available.
+4~The program will take maximum care in this form and table, as it become a vital transaction to be captured.
+24~In this module you will see that every capture of data will be validated and checked on saving into the database.
+78~For for example the capture of voucher number, clinical information, diagnosis details, drug and investigation details and the costs are going to provide the program a vital report information.
+13~The system development team will focus its attention in making this module or table function efficiently.
+96~For the easy understanding and designing of the system, this module is subdivided into following submodules.
+2~The division of submodule is purely based on the sublevel categories of the data information.
+26~Other than Contact No and EMail Id all other information are mandatory during the creation of a new Service Provider.
+6~The VSP code is a digit code with suffix SP, would be automatically generated by the system.
+187646~The system should generate message with two option "Continue Yes or No" while the user trying to create a new VSP with an existing name, If the user press Yes the system will allow the user to enter the same, if not the system wont allow the new entry to save.
+104934~The system will list District, SubDistrict, County, SubCounty, Village or Town from the master during VSP creation, if any of them are not available in the system, then the system will have the provision to navigate quickly to its master screen and do enter master details and back to VSP screen.
+648~The values of Health Sub District, Locality, Level Of Facility, Type of facility, Registration Body would be list from their own master and should select the details based on the VSP.
+3660~If any of the information is not available in existing master of above, then the system will have the provision to navigate quickly to its form to enter the master details and back to VSP Screen.
+4~The system will populate Active VSP only on other screen during data entry process, but the system will also populate all VSP for report purpose.
+4~Activation and Inactivation of VSP is purely based on the MSIU Management decision.
+184~But if the system is found more than two fraud entries during the claim process of particular VSP, then the system would automatically change the status of that particular VSP as Inactivate.
+26~Activation of that particular VSP is again purely based on MSIU Management decision.
+40~The VSP Master Information screen should have a provision to enter the payment terms agreed between MSIU and VSP.
+6~The system will capture following master details to fill the payment terms.
+5492~The above mentioned payment terms will help the MSIU to make the payment detail easy and also help the VSP to get their payment in timeThe system will control the payment process and terms.
+240~The allowed users only can able to Add, Modify or delete the VSP master information including payment terms.
+2~The VSP screen will have the provision to view the Claim Status of selected VSP.
+12~The system will facilitate to show the user following details if necessary.
+6~VSP Name (as the report header and below as the details part of report)
+4~Cumulative Total Amount will show in Report footer for the previous payment done.
+35~The system will have the facility to capture the details of VSP staff details and the necessary master information while entering the claim into the system.
+309~The system will generate message while creating a new staff with existing name, but the system will allow the user to save that new staff if its required.
+6~All above information's other than Qualification are mandatory during the creation of new staff under any VSP.
+42~The system will automatically create Staff Code with Suffix as VSP Code + SC + 3 digit.
+34002~For example HP0001SC0001 Staff type (should be select from list of staff type listing from Staff Type Master) If any of the staff type is not available in the system, then the system should have the provision to navigate quickly to staff type master to enter the new staff type and then back to Staff Master screen.
+48~Depends on the payment terms (Bimonthly or Monthly) mentioned in the VSP master the VSP should submit the Claim (Treatment form) to the MISU Field office.
+24~While submitting the Claim (Treatment Form) to MSIU, the system will have the provision to capture the following details.
+4~These information is vital and shall be used for compared with the processed claims.
+1~During submission entry all above information's are mandatory
+1~Date of submission should be current date
+2~The system lists the VSP Name from VSP Master.
+3~Mentioned Forms and Available Forms only accept numeric values.
+6~Available forms may be less than or greater than or equal to Mentioned Forms.
+8~In the transaction part no of forms should match with No of Available Forms
+18~The system should print a receipt document based on the information entered during claim submission.
+4~The document should have the following information.
+48~The claim entry is purely based on the Treatment (claims) Form submitted by the VSP.
+242~Before the claim entry the user should check the form manually to understand whether any mandatory information is missed in the Claim or not.
+1~If yes, then the user should mark that Claim (Treatment Form) status as Rejected and send back to VSP.
+4~During the claim entry the system should capture the following information.
+4~The above details are the master informationd and below listed information are the transaction details of a Claim.
+3538~The system will have the provision to enter any number of Syndrome, Clinical Examinations, Diagnosis, Lab Test, Drugs and Other Measures in any treatment level based on MSIU treatment master.
+19~The system will automatically generate the Claim number with Hospital Code as Suffix + 8 digit
+3672~if any details are not exist in Master record, then the system should have the provision to navigate quickly to its master screen to enter the new details and back to the Claim Entry Screen
+165~Patient Status: suppose the status is Referral then the system will have the provision to capture Referred To and Reason for Referral, the reason for Referral should be populated from Referral master.
+160~Claim Status: Status of the claim is depends information available in the Claim, if any false data or any mandatory information is available in Claim, then the claims status will change.
+280~if the value of status is not "Accepted" then the claim will be stored in quarantine area and can able to precede it further from its status.
+3~The system should have a provision to capture the reason suppose if the claim status is "Rejection or Quarantine"
+4~Claim Amount The calculation of claim amount is explained below.
+358~The system captures the thump impression available in each claim form, and needs to compare it with the same voucher numbers previous visits if available.
+6~If the thump impression are mismatching for the same patient (Client or Partner) on same voucher the system would automatically make a count on it.
+18~If the claim from same VSP having more than two times of Thump Impression mismatching, then the system should automatically produce a warning message and the same time the system should InActivate the VSP.
+6~The authorized user can alter or amend the Claim if required.
+4~The user should enter the information exactly into the system from the manual claim form
+2~System only accept claims only if the mandatory information is complete
+5~System should calculate Claim Amount only based on treatment matrix
+142~Voucher Sales return is feature used when a distributor is planning to return the vouchers back to the MSIU sales team.
+8~The system will capture the following information during the sales return transaction.
+37~While entering return vouchers details the system will check weather the returned voucher was sold to this particular Distributor or not.
+3~If not the system won't accept those vouchers as return.
+13~MSIU team collects the client feedback from the clients who got treatment through the voucher system.
+8~The Client Feedback form should capture the following details
+1~The user should enter correct Voucher No
+12~The user will not alter any information about treatment, which is populating from the system
+14~The system has the provision to provide various analytical, medical, financial and statistical reports, such reports can be designed later.
+6~The security setting of the entire system is based on User Group.
+2~The roles available in the system are allocated to user group.
+3~The user group creation would capture the following Information
+3~The system admin only can able to create User Groups
+9~The system should have the provision to create any number of individual user under any user group.
+8~The system should save the user information only if the Password and Verify password values are equal
+69~The system should not allow the user to create a User Group and Individual User with existing names

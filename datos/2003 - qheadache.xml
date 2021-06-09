@@ -1,0 +1,93 @@
+<req_document>
+ 
+     <p id="2">
+         <title>GENERAL DESCRIPTION</title>
+         <p id="2.1">
+             <title>Product Perspective</title>
+             <p id="2.1.1">
+                 <title>User Interfaces</title>
+                 <text_body>The product runs as a standalone application.
+ Its user interface uses menus, graphics and sounds.</text_body>
+             </p>
+             <p id="2.1.2">
+                 <title>Hardware Interfaces</title>
+                 <text_body>The product requires the use of a keyboard and a mouse to interface with the
+ user. It requires a graphical display of at least 800*600 resolution.</text_body>
+             </p>
+             <p id="2.1.3">
+                 <title>Software Interfaces</title>
+                 <text_body>The product uses the Qt graphical library. It must run with all the operating
+ systems that Qt supports.</text_body>
+             </p>
+ 
+         </p>
+         <p id="2.2">
+             <title>Product Functions</title>
+             <p id="2.2.1">
+                 <title>Undo et Redo Actions.</title>
+                 <text_body>The user must undo and redo its last thousand actions.</text_body>
+             </p>
+             <p id="2.2.2">
+                 <title>Time passed to play.</title>
+                 <text_body>The product must count and display the time that the user uses to play.</text_body>
+             </p>
+             <p id="2.2.3">
+                 <title>Count of action number.</title>
+                 <text_body>The product must count and display the number of the user' asction.</text_body>
+             </p>
+             <p id="2.2.4">
+                 <title>Score.</title>
+                 <text_body>The product must record the score (time and number of counts) of a play
+ associated with the name of a user.</text_body>
+             </p>
+             <p id="2.2.5">
+                 <title>Score window.</title>
+                 <text_body>The product must display a window with all the player' scores.</text_body>
+             </p>
+         </p>
+ 
+     </p>
+     <p id="3">
+         <title>SPECIFIC REQUIREMENTS</title>
+         <p id="3.1">
+             <title>External Interfaces</title>
+             <text_body>The product generally requires a mouse and a keyboard for input. Other pointing
+ and input devices are allowable, provided they provide similar functions to a
+ mouse and keyboard, namely the ability to move a cursor onscreen to select
+ buttons and the ability to type names.
+ The product uses menus, graphics and sounds. The hardware and operating
+ system must provide an 800x600 screen resolution. Sound is not required to play
+ the game.</text_body>
+             <p id="3.1.1">
+                 <title>User Interfaces</title>
+                 <p id="3.1.1.1">
+                     <title>Introduction</title>
+                     <text_body>The users consist of anyone who wants to play a simple game who knows how to
+ operate a computer, with a beginning level player starting at age 8, up through an
+ advanced level player who could be an adult.</text_body>
+                 </p>
+                 <p id="3.1.1.2">
+                     <title>Main window</title>
+                     <text_body>The main window shall provide the following parts :
+                         <itemize>
+                             <item>A board</item>
+                             <item>a menu bar</item>
+                         </itemize>
+                     </text_body>
+                 </p>
+             </p>
+ 
+         </p>
+ 
+ 
+         <p id="3.3">
+             <title>3.3Performance Requirements</title>
+             <text_body>There can be only one user per machine.</text_body>
+         </p>
+         <p id="3.4">
+             <title>Software System Attributes</title>
+             <text_body>The software must be portable to the Windows OS.</text_body>
+         </p>
+     </p>
+     
+ </req_document>

@@ -112,9 +112,14 @@ if __name__ == '__main__':
     # reqs_1 = create_reqs(results, items_are_reqs=False)
     # reqs += break_lines(reqs_1)
 
-    doc = xml_file_to_dict('datos/2003 - qheadache.xml')
+    # doc = xml_file_to_dict('datos/2003 - qheadache.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs_1 = create_reqs(results, items_are_reqs=False)
+    # reqs += break_lines(reqs_1)
+
+    doc = xml_file_to_dict('datos/2005 - microcare.xml')
     results = interpret_dict(doc, ['text_body', '#text', 'title'])
-    reqs_1 = create_reqs(results, items_are_reqs=False)
+    reqs_1 = create_reqs(results, items_are_reqs=True)
     reqs += break_lines(reqs_1)
 
     write_req_file('reqs_new.txt', reqs)
