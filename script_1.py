@@ -37,6 +37,8 @@ def create_reqs(raw_reqs: list, items_are_reqs=False) -> list:
 
     for tag, text in raw_reqs:
 
+        text = re.sub('	+', '', text) # remove tabs
+
         text = text.replace('\n', '').replace(';', '').replace('<', '').replace('>', '') # remove some chars
         
         text = text.replace('“', '"').replace('”', '"').replace(' — ', ', ').replace('’', "'").replace('-', ' ').replace('/', " or ") # replace some chars with alternatives
@@ -117,9 +119,24 @@ if __name__ == '__main__':
     # reqs_1 = create_reqs(results, items_are_reqs=False)
     # reqs += break_lines(reqs_1)
 
-    doc = xml_file_to_dict('datos/2005 - microcare.xml')
+    # doc = xml_file_to_dict('datos/2005 - microcare.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs_1 = create_reqs(results, items_are_reqs=True)
+    # reqs += break_lines(reqs_1)
+
+    # doc = xml_file_to_dict('datos/2005 - phin.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs_1 = create_reqs(results, items_are_reqs=True)
+    # reqs += break_lines(reqs_1)
+
+    # doc = xml_file_to_dict('datos/2007 - get real 0.2.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs_1 = create_reqs(results, items_are_reqs=False)
+    # reqs += break_lines(reqs_1)
+
+    doc = xml_file_to_dict('datos/2007-ertms.xml')
     results = interpret_dict(doc, ['text_body', '#text', 'title'])
-    reqs_1 = create_reqs(results, items_are_reqs=True)
+    reqs_1 = create_reqs(results, items_are_reqs=False)
     reqs += break_lines(reqs_1)
 
     write_req_file('reqs_new.txt', reqs)

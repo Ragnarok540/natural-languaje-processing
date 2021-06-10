@@ -1,0 +1,36 @@
+﻿<req_document>
+ 
+     <p id="4">
+         <title>External Interface Requirements</title>
+         <p id="4.1">
+             <title>User Interfaces</title>
+             <text_body>The Get Real site should work and be tested against IE, Firefox and Netscape.</text_body>
+         </p>
+ 
+     </p>
+     <p id="5">
+         <title>Other Nonfunctional Requirements</title>
+         <p id="5.1">
+             <title>Performance Requirements</title>
+             <text_body>The Get Real site should be hosted on a server that can provide adequate
+ response time. High school students tend to have short attentions spans, so a
+ slow server would not be satisfactory for this application. The current OUS
+  site is a good example of rapid response time.</text_body>
+         </p>
+         <p id="5.2">
+             <title>Security Requirements</title>
+             <text_body>Copyright and other security measures for Get Real should be the same as the
+ OUS site.</text_body>
+         </p>
+         <p id="5.3">
+             <text_body>There is a need to track and evaluate the hits and time spent on the
+ student focused website over time; and make content, design, and navigation
+ changes as needed based on evaluation of hits.</text_body>
+             <p id="5.3.1">
+                 <title>Software Quality Attributes</title>
+                 <text_body>Web design conventions should be consistent with the standards and
+ conventions used on the OUS site.</text_body>
+             </p>
+         </p>
+     </p>
+ </req_document>
