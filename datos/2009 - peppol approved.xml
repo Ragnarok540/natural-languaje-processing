@@ -1,0 +1,1097 @@
+﻿<req_document>
+
+  <p id="2">
+    <title>Vision and Scope of the VCD</title>
+
+    <p id="2.2">
+      <title>Pre-VCD mapping tool (Stage 1)</title>
+
+      <p id="2.2.3">
+        <title>Major Features, Requirements and Quality Attributes</title>
+
+        <p id="2.2.3.9">
+          <title>Define governing model with the necessary status and power to ensure fulfilment of functions like liability, sustainability and maintainability</title>
+          <text_body>
+
+          A governing model with the necessary status and power MUST be formally defined in order to ensure
+          fulfilment of functions like liability, sustainability and maintainability.
+            <itemize>
+              <item>
+              Liability: In law a legal liability is a situation in which a person or organisation is financially and
+              legally responsible. The liability of the organisation that governs infrastructure and mapping facility
+              has to be defined in order to ensure trust into the system and particular mapping results?
+              </item>
+              <item>The Liability of organisation that governs the infrastructure and mapping facility MUST be defined</item>
+              <item>
+              Sustainability: Sustainability is the capacity to maintain a certain process or state into the future.
+              The governing model must ensure that the state of the mapping system will be kept over time.
+              Therefore the mapping system has to be based on the commonly agreed mapping and no
+              changes are allowed without a common agreement.
+              </item>
+              <item>
+              The mapping facility MUST ensure sustainability of the system over time based on commonly
+              agreed mapping schemes.
+              </item>
+              <item>
+              Maintainability: The mapping has to be easily maintainable which could be of interest in the case
+              of changes of the legal basis on national or European level. A formal procedure has to be found
+              how changes are applied to the system. Moreover an organisation or institution that governs the
+              process of change management has to be defined.
+              </item>
+              <item>A formal procedure to make changes to the system MUST be defined.</item>
+            </itemize>
+          </text_body>
+        </p>
+
+        <p id="2.2.3.12">
+          <title>Requirements regarding a Pre-VCD mapping tool</title>
+          <text_body>
+
+            <itemize>
+              <item>Provision of an update mechanism maintained by the individual Member State.</item>
+              <item>The pre-VCD mapping tool is openly accessible for economic operators and contracting authorities etc.</item>
+              <item>The tool interface is available in the official languages of the European Union.</item>
+              <item>
+              A powerful search mechanism is implemented to deliver good results when economic operators
+              query the pre-VCD mapping tool in order to understand what evidences he can deliver to confer to
+              the selection and exclusion criteria set in a public tender in another Member State.
+              </item>
+              <item>
+              The results are delivered in a format simple to use for the economic operators; e.g. a check list of
+              evidences he can collect from respective issuing bodies in his country, which fulfil the selection
+              criteria and prove the non-conformance with exclusion criteria set by the contracting authority from
+              a different Member State.
+              </item>
+
+              <item>The Member States shall agree on a common representation format for the information they
+          intend to supply into the knowledge base supporting the tool’s operations.</item>
+              <item>
+              The Member States shall supply the information generated from the analysis of the national
+              context they represent.
+              </item>
+              <item>
+              The Member States need to update the mapping in case of any change within a short time frame
+              (e.g. five days after a legal change has been put into force).
+              </item>
+              <item>
+              The European service provider for the pre-VCD mapping tool has to ensure that European legal
+              changes are implemented quickly (e.g. within five days after enforcement).
+              </item>
+              <item>
+              The European service provider takes responsibility of the operative implementation and
+              compliance of the mapping model implemented in the pre-VCD mapping tool with the respective
+              European and national conditions. Hence, it must be established and funded with clearly defined
+              responsibilities for maintenance and conformance assessment between national solutions.
+              </item>
+              <item>The European service provider sets up a formal definition of the tool generated results.</item>
+              <item>
+              The European service provider defines the criteria for a “service contract” to be formally agreed
+              with “users”.
+              </item>
+            </itemize>
+          </text_body>
+        </p>
+      </p>
+
+    </p>
+    <p id="2.3">
+      <title>VCD simple package (Stage 2)</title>
+
+      <p id="2.3.3">
+        <title>Major Features, Requirements and Quality Attributes</title>
+
+        <p id="2.3.3.1">
+          <title>Identity and access management</title>
+          <text_body>
+            <itemize>
+              <item>
+             Identity and access management MUST provide a functionality to register an economic operator in
+             a formal procedure in order to create a VCD account.
+              </item>
+              <item>
+             Identity and access management MUST provide an interface to submit sensitive economic
+             operator data (for example by uploading attestations that verify sensitive economic operator data)
+             in order to allow the economic operator to apply for the creation of a VCD account.
+              </item>
+              <item>
+             Sensitive economic operator data MUST be verified through a formal procedure by an officer.
+              </item>
+
+              <item>An officer has to create a VCD account for the economic operator.</item>
+              <item>Sensitive economic operator data MUST be placed to a VCD account by an officer.</item>
+              <item>
+             Identity and access management MUST provide a functionality that enables the economic
+             operator to receive his log-in data.
+              </item>
+              <item>
+             The authentication within identity and access management SHOULD provide a single-sign on
+             functionality that can be used across other systems.
+              </item>
+              <item>
+             A change procedure MUST be defined in order to modify sensitive economic operator data that is
+             connected to the VCD account.
+              </item>
+              <item>The economic operator MUST be able to delete his account.</item>
+
+              <item>MUST be clearly defined which economic operator data are sensitive and belong to identity and access management.</item>
+              <item>A single-sign on SHOULD be implemented in order to allow identity and access management across different systems.</item>
+              <item>
+              The identity and access management procedures for creating a VCD account SHOULD be
+              harmonized with the registration procedure of the overall infrastructure provided by WP8.
+              </item>
+            </itemize>
+          </text_body>
+        </p>
+        <p id="2.3.3.2">
+          <title>VCD system</title>
+          <text_body>
+            <itemize>
+              <item>The VCD System SHOULD make use of a single-sign-on interface and function in order to submit login data.</item>
+              <item>
+              The VCD system MUST provide a functionality to check through identity and access management
+              whether an economic operator has sufficient user rights to access his account.
+              </item>
+              <item>The VCD system MUST provide an interface where the economic operator can provide nonsensitive economic operator data.</item>
+              <item>The VCD system MUST provide an interface where tender-specific data can be either fetched from or be provided through (e.g. criteria of qualitative selection and exclusion).</item>
+              <item>The VCD system MUST provide an interface where the economic operator can request the creation of a VCD package.</item>
+              <item>The VCD system MUST have an interface to receive and process the information (mapping of evidence) provided by the pre-VCD mapping tool.</item>
+              <item>
+             The VCD system MUST provide a functionality that suggests a possible compilation of the VCD to
+             the economic operator according to the tender-specific criteria.
+              </item>
+              <item>
+              The VCD system MUST provide a functionality where the economic operator can decide which
+              particular attestation services should be invoked and collected.
+              </item>
+              <item>
+              The VCD system MUST provide a functionality that displays the attestation services that cannot
+              be invoked automatically and that have to be manually added by the economic operator.
+              </item>
+              <item>
+              The VCD system must provide a functionality to request attestations that can be collected
+              automatically via an issuing body.
+              </item>
+              <item>
+              The VCD system MUST have an interface/technical access to retrieve attestations that can be
+              automatically retrieved from issuing bodies. 
+              </item>
+              <item>
+              The VCD system MUST have a functionality to extract structural data of evidence from
+              attestations that can be retrieved automatically.
+              </item>
+              <item>
+              The VCD system MUST have an interface to submit/upload evidence that have to be provided
+              manually by the economic operator.
+              </item>
+              <item>
+              The evidence submitted to the VCD system MUST correspond to the mapping information
+              suggested by the VCD system (or the pre-VCD mapping tool).
+              </item>
+              <item>
+              The VCD system MUST provide an interface where an economic operator can add structural data
+              of evidence that belong to specific evidence.
+              </item>
+              <item>
+              The VCD system SHOULD provide an interface where a translator/economic operator can submit
+              certified translations to specific evidence.
+              </item>
+              <item>
+              The VCD system MUST provide and interface where the economic operator can initiate the
+              compilation process.
+              </item>
+              <item>
+              The VCD system MUST provide a functionality to compile various data formats from various sources (issuing bodies) into a single VCD package.
+                <itemize>
+                  <item>
+                  The VCD package MUST provide a functionality to add structural VCD package data to the VCD
+                  package and VCD system (e.g. log file) during the compilation process.
+                  </item>
+                  <item>
+                  The VCD package MUST provide a functionality to add tender-specific data to the VCD package
+                  and VCD system (e.g. log file) during the compilation process.
+                  </item>
+                  <item>
+                  The VCD package MUST provide a functionality to add economic operator data to the VCD
+                  package and VCD system (e.g. log file) during the compilation process.
+                  </item>
+                  <item>
+                  The VCD package MUST provide a functionality to add tender-specific data to the VCD package
+                  and VCD system (e.g. log file) during the compilation process.
+                  </item>
+                  <item>
+                  The VCD package MUST provide a functionality to add structural data of evidence to the VCD
+                  package and VCD system (e.g. log file) during the compilation process
+                  </item>
+                  <item>
+                  The VCD package MUST provide a functionality to add evidences to the VCD package and
+                  VCD system (e.g. log file) during the compilation process.
+                  </item>
+                  <item>
+                  The VCD package MUST provide a functionality to add translations to the VCD package and
+                  VCD system (e.g. log file) during the compilation process
+                  </item>
+                </itemize>
+              </item>
+              <item>
+              The VCD system MUST provide a functionality to notify the economic operator when the
+              compilation process is finished.
+              </item>
+              <item>The VCD system MUST provide interfaces to deliver the VCD to the economic operator.</item>
+
+              <item>VCD system MUST be operated by at least one national VCD service provider</item>
+              <item>The VCD system MUST have the status of a trusted system.</item>
+              <item>The national VCD service provider that hosts the system must have the status of a trusted entity.</item>
+              <item>Direct access to attestations issued by (national) issuing bodies MUST be established through organisational agreements (e.g. service level agreements).</item>
+              <item>Technical access to the relevant attestations issued by (national) issuing SHOULD be supported through national law.</item>
+              <item>The compilation suggestion that is given to the economic operator by the VCD system MUST be reliable with regard to fulfilment of tender-specific requirements.</item>
+              <item>User rights for the VCD system MUST be defined.</item>
+              <item>Structural data of evidence MUST be defined.</item>
+              <item>Semantic interoperability of structural data of evidence SHOULD be ensured through an agreement procedure among the WP partners.</item>
+              <item>The evidence submitted to the VCD system MUST be eligible for the requirements mentioned by §§45– 46 of European Directive 2004/18/EC.</item>
+            </itemize>
+          </text_body>
+        </p>
+        <p id="2.3.3.3">
+          <title>VCD transportation system</title>
+          <text_body>
+            <itemize>
+              <item>
+              The VCD transportation system MUST provide a functionality that enables both parties involved,
+              contracting authorities and economic operators, to authenticate to the VCD transportation system
+              before using it.
+              </item>
+              <item>The authentication to the VCD transportation system SHOULD make use of single-sign-in interface and function in order to submit login data.</item>
+              <item>
+              The VCD transportation system MUST provide a functionality that enables the economic operator
+              to find an electronic address of a contracting authority for receiving VCD packages.
+              </item>
+              <item>The VCD transportation system MUST have an interface to connect to it in order to submit the VCD package to a contracting authority.</item>
+              <item>The VCD transportation system MUST provide a functionality that supports the economic operator in submitting the VCD package to a contracting authority.</item>
+              <item>
+              The VCD transportation system SHOULD provide a functionality that supports the economic
+              operator in submitting the VCD package to a contracting authorities’ procurement platform where
+              the tender/bid has to be placed.
+              </item>
+              <item>
+              The transportation system MUST provide an interface that enables contracting authorities to
+              receive a VCD.
+              </item>
+
+              <item>Both parties involved, contracting authorities and economic operators, MUST have an electronic address for receiving/sending VCD packages.</item>
+              <item>The transport of a VCD package MUST be initiated by the economic operator.</item>
+              <item>The choice of how to submit the VCD package to the contracting authority MUST be the one that is preferred by the economic operator.</item>
+              <item>Beside the transportation system (WP8) the economic operator SHOULD be able to use other electronic channels for submitting a VCD package to the contracting authority.</item>
+              <item>It MUST be clarified which possibilities exist to utilize the infrastructure for submitting a VCD package directly to procurement platforms (e.g. via VPN).</item>
+              <item>The transportation system MUST ensure that the VCD package is being delivered to the contracting authority</item>
+              <item>The transport of a VCD package MUST be confidential.</item>
+              <item>The transport of a VCD package MUST be reliable.</item>
+              <item>The transport of a VCD package MUST be secure.</item>
+              <item>The transport of a VCD package MUST ensure that the package has not been altered or modified during transportation or validation.</item>
+              <item>Non-repudiation of origin of a VCD package MUST be supported.</item>
+              <item>A VCD will carry a unique identifier and information about security and quality enhancing policies used by the certified VCD Service Provider when compiling the file.</item>
+            </itemize>
+          </text_body>
+        </p>
+        <p id="2.3.3.4">
+          <title>VCD viewing system</title>
+          <text_body>
+
+            <itemize>
+              <item>The VCD viewing system MUST provide a functionality to authenticate contracting authorities to view the data contained within a VCD package.</item>
+              <item>The authentication to the VCD viewing system SHOULD make use of single-sign-on interface and function in order to submit login data.</item>
+            </itemize>
+          </text_body>
+          
+          <text_body>
+          The VCD viewing system MUST provide an interface that adequately displays various types of data
+          formats contained within a single VCD package.
+            <itemize>
+              <item>The VCD viewing system MUST display structural VCD package data contained in the VCD package</item>
+              <item>The VCD viewing system MUST display tender-specific data contained in the VCD package</item>
+              <item>The VCD viewing system MUST display economic operator data contained in the VCD package</item>
+              <item>The VCD viewing system MUST display tender-specific data contained in the VCD package</item>
+              <item>The VCD viewing system MUST display structural data of evidence contained in the VCD package</item>
+              <item>The VCD viewing system MUST display evidences contained in the VCD package</item>
+              <item>The VCD viewing system MUST display translations of evidences contained in the VCD package</item>
+              <item>Member State of this work package SHOULD follow a common standard representation of the different types of data</item>
+              <item>Member State of this work package SHOULD define a national version of the common standard representation of the different types of data.</item>
+              <item>Any standard representation of the different types of data MUST be agreed upon the pilot partners.</item>
+              <item>A method (e.g. reverse engineering) to develop a standard representation of the different types of data SHOULD be defined.</item>
+              <item>A method for the versioning of the development of this common standard schema SHOULD be found.</item>
+            </itemize>
+          </text_body>
+        </p>
+      </p>
+
+    </p>
+
+    <p id="2.4">
+      <title>VCD advanced package (Stage 3)</title>
+
+      <p id="2.4.3">
+        <title>Major Features, Requirements and Quality Attributes</title>
+
+        <p id="2.4.3.1">
+          <title>Context specific data</title>
+          <text_body>
+            <itemize>
+              <item>A VCD system MUST provide functionality to collect and process context specific data for evidence that has to be provided manually or semi-automatically by the issuing body, by the economic operator or any trusted third party.</item>
+              <item>A VCD system MUST provide functionality to collect and process context specific data for evidence that has to be provided automatically by the issuing body.</item>
+              <item>A VCD system MUST provide IT-interfaces to issuing bodies which provide evidences in machine interpretable format.</item>
+              <item>A VCD system MUST interact with the issuing bodies which provide evidences in machine interpretable format through IT-interfaces.</item>
+              <item>A VCD system MUST provide a user interface to the issuing body to provide context specific data for an evidence in a structured form (e.g. web-interface, XML-file-upload).</item>
+              <item>The VCD system MUST provide a functionality to validate the provided context specific data during the submission process of context specific data to ensure the data is consistent with the VCD advanced package schema.</item>
+              <item>Interfaces MUST be defined to retrieve context specific data from issuing bodies either automatically or semi-automatically.</item>
+              <item>Interfaces SHOULD be defined that enable national VCD service providers to approve context specific data if they decide to take the role of a trusted third party.</item>
+              <item>The rule set derived from legal requirements concerning “evidence checking” MUST be defined.</item>
+              <item>he rule set allowing for a Stage 3 mapping among concepts expressed by the “context specific data” MUST be defined.</item>
+              <item>The rule set derived from legal requirements concerning subcontracting and other consortium constellations MUST be defined</item>
+              <item>A functionality to display context specific data SHOULD/MUST be included within any VCD.</item>
+              <item>Any VCD advanced package MUST follow a common standard schema of context specific data that summarize and structure major information contained within context specific evidences.</item>
+              <item>Context specific data MUST be machine interpretable</item>
+              <item>Evidences that have a simple structure and limited variety of contents MUST be included into the common standard schema first.</item>
+              <item>WP2 SHOULD provide easy solutions for transforming the contents of context specific evidence into simple context specific representations (e.g. a Balance sheet can have several values but an easy representation could be the fulfilment of certain ranges for example below 1 Million / from 1 Million to 10 / …).</item>
+              <item>A semantic definition of each element/class of the common standard schema of context specific data MUST be created and has to ensure a common understanding.</item>
+              <item>A semantic definition of each element/class of the common standard schema of context specific data MUST ensure that these data is mutually recognized as replacement of the official translation of an evidences included.</item>
+              <item>A method and agreement procedure to develop a common standard schema of context specific data MUST be defined. This procedure must cover the technical aspects of data analysis (e.g. reverse engineering) as well as the organizational aspects (e.g. which context specific data is required from contracting authorities or under which circumstances would they would replace certified translation of evidence by context specific data).</item>
+              <item>Any common standard schema of context specific data classes MUST be agreed upon the pilot partners.</item>
+              <item>Representation of context specific data SHOULD be available in multiple languages</item>
+              <item>Every pilot partner MUST follow the common standard schema of context specific data by defining a national version of it.</item>
+              <item>A method for versioning the development of common standard schema of context specific data SHOULD be found.</item>
+            </itemize>
+          </text_body>
+        </p>
+        <p id="2.4.3.2">
+          <title>Advanced VCD creation service</title>
+          <text_body>
+
+            <itemize>
+              <item>A VCD system MUST provide a user-interface to the economic operator to initiate the creation of a VCD advanced package.</item>
+              <item>A VCD system MUST provide a user-interface to the economic operator to provide existing VCD packages of other economic operators when specific disclosure options have been activated.</item>
+              <item>A VCD system MUST provide a functionality to check, whet her the structural VCD package data of existing VCD packages of other economic operators are consistent with the VCD advanced package schema of other economic operators, or not</item>
+              <item>A VCD system MUST provide a functionality to check, whether the tender specific data of existing VCD packages are consistent with the tender specific data of other VCD packages.</item>
+              <item>
+              A VCD system MUST provide functionality to merge the following data from several existing VCD packages of other economic operators:
+              </item>
+              <item>
+              A VCD system MUST provide functionality to compile the data which result from the evidence
+              collection process and the data provided by the economic operator in the VCD advanced package
+              creation.
+              </item>
+              <item>Merging of VCD simple packages and VCD advanced packages into a VCD advanced package SHOULD be possible</item>
+            </itemize>
+          </text_body>
+        </p>
+        <p id="2.4.3.3">
+          <title>VCD re-compilation service</title>
+          <text_body>
+            <itemize>
+              <item>A VCD system MUST provide a user-interface to the economic operator to initiate the recompilation of an existing VCD package into a VCD advanced package.</item>
+              <item>A VCD system MUST provide a user-interface to the economic operator for uploading an existing VCD package</item>
+              <item>A VCD system MUST provide a functionality to decompose an existing VCD package</item>
+              <item>A VCD system MUST provide a functionality to identify outdated or obsolete evidences</item>
+              <item>A VCD system must provide a functionality to retrieve actual instances of outdated evidences</item>
+                 <item>Re-compiling a VCD simple package into a VCD advanced package MUST be possible</item>
+              <item>Re-compiling a VCD advanced package into a VCD advanced package MUST be possible</item>
+              <item>structured) context specific data by manual means in order to create context specific data using the semi-automated approach.</item>
+            </itemize>
+          </text_body>
+        </p>
+      </p>
+
+
+    </p>
+    <p id="2.5">
+      <title>VCD network package (Stage 4)</title>
+
+      <p id="2.5.3">
+        <title></title>
+        <text_body>
+          <itemize>
+            <item>The VCD system MUST provide functionality and an interface to the economic operator that enables him to mandate a certain contracting authority to request attestations on demand.</item>
+            <item>The VCD system MUST detect which attestations can be used by this feature (e.g. they have to be sufficiently described through context specific data and structural data of evidence).</item>
+            <item>The VCD system MUST provide a functionality that enables National VCD Service Providers to store attestations.</item>
+            <item>A functionality for referencing to attestations MUST be implemented within the VCD system.</item>
+            <item>The VCD system MUST ensure that a contracting authority is able to request attestations via the provided reference (including time-restrictions).</item>
+            <item>The functionality for referencing to attestations within the VCD MUST be implemented, either VCD-specific or contracting authority-specific, in order to approve whether the contracting authority has sufficient rights for requesting the attestations.</item>
+            <item>VCD-specific or contracting authority-specific reference to attestations MUST be stored within the VCD system (processing instructions).</item>
+            <item>The VCD system MUST provide a functionally to check whether a contracting authority has sufficient rights and has been mandated by the economic operator to retrieve attestations.</item>
+            <item>The VCD system MUST provide a functionality and an interface that enables contracting authorities to retrieve the attestation from the storage.</item>
+            <item>The VCD system MUST ensure that the attestation that is requested by the contracting authority is still valid at the time of awarding or when the Call for Tender is closed.</item>
+            <item>The VCD system MUST provide a functionality that initiates a conflict resolution process between economic operator and contracting authority if errors occur or when certain attestation or a translation cannot be delivered on demand.</item>
+            <item>The VCD system SHOULD provide a functionality to approve attestations through validation data and to make this approval visible within a VCD networked package when a National VCD Service provider takes the role of a national validation point in accordance with Article 52 (1) of Directive 2004/18/EC and EFTA EEA Committee decision 68/2006.</item>
+            <item>There MUST be an access policy that is issued by the economic operator that mandates a contracting authority to request attestation from the national VCD service provider on demand.</item>
+            <item>A general reference structure and syntax MUST be defined. This may include creating contracting authority specific or VCD specific references in order to identify a mandate that has been given by the economic operator to this contracting authority for retrieving attestation or even updates on it.</item>
+            <item>National and local political commitments and service-level agreements MUST ensure that consensuses on roles and responsibilities are built with regard to this solution and in particular the National Service Providers who delivers attestations on demand.</item>
+            <item>There MUST be a service-level agreement between the parties involved (Economic Operators, Contracting authorities, National Service Providers, and Trusted Attestation Service) about the response time of a delivery of attestations and data availability.</item>
+            <item>There MUST be a service-level agreement between the parties involved (Economic Operators, Contracting authorities, National Service Providers, and Trusted Attestation Service) about conflict resolution that describe what to do when errors occur or when attestation or translations cannot be delivered “on demand”.</item>
+            <item>The attestations where an agreement on context specific formats can be reached most easily SHOULD be included first into the network.</item>
+            <item>WP2 SHOULD provide easy solutions for displaying context specific data and should enable their validation through validation values</item>
+            <item>Legal systems MUST ensure that context specific data and validation values have an equivalent value to the provision of conventional / traditional attestations (Scope of mutual recognition).</item>
+            <item>The National Service Providers SHOULD establish validation points in order to approve an economic operator in accordance with Article 52 (1) of Directive 2004/18/EC.</item>
+            <item>The national procurement law MUST ensure that National Service Provider can act as national validation points in accordance with Article 52 (1) of Directive 2004/18/EC for economic operators.</item>
+            <item>Liability issues of the National Service Providers MUST be clarified when they act as national validation points in accordance with Article 52 (1) of Directive 2004/18/EC for economic operators.</item>
+            <item>National procedures with regard to Article 52 (1) of Directive 2004/18/EC MUST be mutually recognized and trusted in across borders.</item>
+          </itemize>
+        </text_body>
+      </p>
+
+    </p>
+  </p>
+  <p id="3">
+    <title>Legal, organisational and semantic framework and requirements</title>
+
+    <p id="3.1">
+      <title>Organisational Framework</title>
+
+      <p id="3.1.2">
+        <title>Organisational requirements</title>
+
+        <p id="3.1.2.1">
+          <title>List of recognized public attestation bodies</title>
+          <text_body>
+
+          A list of recognized public authorities that are able to issue certain attestations in a particular Member
+          State MUST be established.
+
+          </text_body>
+        </p>
+        <p id="3.1.2.2">
+          <title>List of recognized private attestation bodies</title>
+          <text_body>
+
+          A list of recognized private entities that are able to issue certain attestations in a particular Member
+          State SHOULD be established.
+
+          </text_body>
+        </p>
+        <p id="3.1.2.3">
+          <title>Utilization of existing national procedures and infrastructures</title>
+          <text_body>
+
+          Widely accepted national procedures and infrastructures SHOULD be utilized wherever possible.
+
+          </text_body>
+        </p>
+        <p id="3.1.2.4">
+          <title>Increasing trust through national authority</title>
+          <text_body>
+
+          A national authority MUST support critical processes in order to increase the trust between the entities
+          involved.
+
+          </text_body>
+        </p>
+
+        <p id="3.1.2.7">
+          <title>Scope with regard to Article 52</title>
+          <text_body>
+
+          A national pilot solution may implement attestation validation feature but proof of conformance and
+          checking is not a mandatory feature that has to be fulfilled by a national service provider.
+        </text_body>
+          
+        <text_body>
+          Any of the proposed stages SHOULD be applicable within a Member State who wishes to apply Article
+          52 and EFTA EEA Committee decision 68/2006.
+        </text_body>
+          
+        <text_body>
+          A Member State MUST formally define an authority that is able to provide a proof of conformance to
+          certain criteria if the Member State wishes to implement Article 52 or if Article 52 is already
+          implemented.
+
+          </text_body>
+        </p>
+        <p id="3.1.2.8">
+          <title>Specification of subset of evidences and related criteria by the contracting authority</title>
+          <text_body>
+
+          The contracting authority has to specify a subset of the superset of criteria that is relevant to a specific
+          Call for Tender so that any VCD application can perform the mapping later on
+
+          </text_body>
+        </p>
+        <p id="3.1.2.9">
+          <title>Provision of subset of evidences and criteria by the Economic Operator</title>
+          <text_body>
+
+          Any VCD system must have an interface to provide tender-specific data and (in particular the relevant
+          criteria subset) in order to perform the mapping.
+
+          </text_body>
+        </p>
+        <p id="3.1.2.10">
+          <title>Scope of VCD application with regard to two-phased tendering</title>
+          <text_body>
+
+          The main subject of the VCD is the final submission of evidence to the contracting authority
+
+          </text_body>
+        </p>
+        <p id="3.1.2.11">
+          <title>Principle for selecting issuing body</title>
+          <text_body>
+
+          If there are multiple ways to provide evidence the choice of selecting a specific issuing service is left to
+          the requester.
+
+          </text_body>
+        </p>
+        <p id="3.1.2.12">
+          <title>Economic Operators that act as Issuing Bodies</title>
+          <text_body>
+
+          An economic operator MUST be able to act as an issuing body for candidate statements or other
+          evidence that cannot be directly or electronically retrieved by the VCD system.
+
+          </text_body>
+        </p>
+        <p id="3.1.2.13">
+          <title>Universal support</title>
+          <text_body>
+
+          The electronic procurement framework MUST support organizations of any size and industry.
+          </text_body>
+        </p>
+        <p id="3.1.2.14">
+          <title>Testing of VCD solution</title>
+          <text_body>
+
+          The VCD solutions MUST be tested in specific cases by re-processing historical tenders. The testing
+          SHOULD be repeated regularly and especially after up-dating of software. A national solution will only
+          be authorized to operate cross-border when all tests are passed; the testing has to be maintained and
+          monitored by the European VCD Service Provider.
+        </text_body>
+          
+        <text_body>
+          Stakeholder MUST be found in order to re-process historical tenders.
+
+          </text_body>
+        </p>
+      </p>
+    </p>
+    <p id="3.2">
+      <title>Semantic framework</title>
+ 
+      <p id="3.2.4">
+        <title>Semantic Requirements</title>
+
+        <p id="3.2.4.1">
+          <title>Semantic interoperability</title>
+          <text_body>
+
+          Evidential documents exchanged between parties MUST be semantically harmonized in order
+          to be processed electronically.
+          </text_body>
+        </p>
+        <p id="3.2.4.2">
+          <title>Correspondence between national and European criteria</title>
+          <text_body>
+
+          National criteria for qualitative selection and exclusion MUST correspond to European criteria which
+          are derived from Article 45-50 and which are partially described in the Eligibility of Tenders.
+        </text_body>
+          
+        <text_body>
+          National criteria SHOULD be consistent among themselves and with European criteria.
+
+          </text_body>
+        </p>
+        <p id="3.2.4.3">
+          <title>VCD specific characteristics</title>
+          <text_body>
+
+          Any VCD instance MUST be specific with regards to a certain economic operator.
+        </text_body>
+          
+        <text_body>
+          Any VCD instance SHOULD be specific with regards to a certain tender.
+        </text_body>
+          
+        <text_body>
+          A unique VCD identifier needs to be established.
+          </text_body>
+        </p>
+        <p id="3.2.4.4">
+          <title>Method for ensuring “Level of completeness”</title>
+          <text_body>
+
+          When implementing any tool, system or service WP2 MUST focus on mandatory requirements and
+          evidences mentioned in Articles 45 and 46 first since theses Articles are not tender-specific and
+          therewith relevant for nearly all tenders.
+        </text_body>
+          
+        <text_body>
+          The mapping between evidences via requirements MUST have set a primary focus on the mandatory
+          requirements and evidences of a VCD.
+        </text_body>
+          
+        <text_body>
+          Articles 47 to 50 open a wide range of different criteria which are tender- and country-specific thus
+          they MUST be added stepwise to the pre-VCD mapping tool (which may require a higher-level
+          mapping).
+        </text_body>
+          
+        <text_body>
+          Any VCD system SHOULD provide the opportunity to the economic operator to produce a complete
+          VCD even if there are several issuing services that are not under control of a national service provider,
+          do not have specific mapping to other documents defined in the pre-VCD mapping tool and have to be
+          provided by the economic operator manually.
+          </text_body>
+        </p>
+        <p id="3.2.4.5">
+          <title>Placeholders in VCD packages</title>
+          <text_body>
+
+          Any VCD system provides the functionality to add additional documents through placeholders.
+
+          </text_body>
+        </p>
+        <p id="3.2.4.6">
+          <title>Semantics of evidence</title>
+          <text_body>
+
+          Interfaces to submit evidence to the VCD system have to be defined along with common semantics in
+          order to allow issuing bodies to further specify evidence with regard to structural data, context specific
+          data and validation values.
+ 
+          </text_body>
+        </p>
+        <p id="3.2.4.7">
+          <title>Visualization of the VCD package</title>
+          <text_body>
+
+          Develop a format that allows the presentation and displaying of the contents of a VCD package.
+
+          </text_body>
+        </p>
+        <p id="3.2.4.8">
+          <title>Implementation approach with regard to stages of maturity</title>
+          <text_body>
+
+          The pre-VCD mapping tool (Stage 1) MUST be filled with instances (defined) by every Member State
+          since Stage 1 is a precondition for any other stage.
+        </text_body>
+          
+        <text_body>
+          The VCD simple package (Stage 2) lays the basic ground for the creation of VCDs and the
+          implementation of other services mentioned in stages 3 and 4 so the key concepts of Stage 2 MUST
+          be implemented in each Member States.
+        </text_body>
+          
+        <text_body>
+          Stage 3 (VCD advanced package) and stage 4 (VCD networked package) introduce a set of optional
+          functions that SHOULD be considered by each Member State when implementing a VCD.
+        </text_body>
+          
+        <text_body>
+          The stages are logically built upon each other but it MUST be possible to implement certain features of
+          stage 4 if the necessary requirements for this are fulfilled in the lower stages even if maybe not all
+          requirements are fulfilled in stage 3.
+          </text_body>
+        </p>
+        <p id="3.2.4.9">
+          <title>Principle for including attestations in stage 3 and 4</title>
+          <text_body>
+
+          PEPPOL WP2 is not focussing on the creation of context-specific data of attestations or candidate
+          statements in multilingual versions. If context-specific data is provided in multilingual versions (e.g.
+          XBRL, ECRIS etc.) this has a high priority to be included into stage 3 and stage 4.
+        </text_body>
+          
+        <text_body>
+          If attestations are described sufficiently in multiple lingual versions they SHOULD be included first to
+          stages 3 and 4.
+        </text_body>
+          
+        <text_body>
+          If the prove concentrates on qualitative aspects (e.g. provide balance sheet or extracts from it in order
+          to proof its economic or financial standing) then the validation value cannot be applied. Instead such
+          an attestation can be included into VCD stages 3 and 4 if it is sufficiently described through context
+          specific data in multilingual versions (e.g. XBRL, ECRIS etc.).
+
+          </text_body>
+        </p>
+        <p id="3.2.4.10">
+          <title>Classification schemes awareness</title>
+          <text_body>
+          Classification schemes for goods, services and code lists SHOULD be publicly available and identified
+          in the document objects.
+          </text_body>
+        </p>
+      </p>
+    </p>
+    <p id="3.3">
+      <title>Legal framework</title>
+      <p id="3.3.2">
+        <title>Legal Requirements</title>
+
+        <p id="3.3.2.1">
+          <title>Equal treatment of foreign economic operators</title>
+          <text_body>
+
+          The VCD SHOULD support that economic operators from foreign member states may not be treated
+          harder than own member state’s economic operators.
+
+          </text_body>
+        </p>
+        <p id="3.3.2.2">
+          <title>Minimum period of validity of VCD package</title>
+          <text_body>
+
+          The possibility of a definition of a minimum validity of a VCD package has to be defined
+ 
+          </text_body>
+        </p>
+        <p id="3.3.2.3">
+          <title>Equivalence between automated transformation and official translation of attestations</title>
+          <text_body>
+
+          The provision of attestations that are available in context-specific formats including multi-lingual
+          versions and their transformation into any target language has to guarantee similar legal status and
+          effect is reached compared to official translation.
+
+          </text_body>
+        </p>
+        <p id="3.3.2.4">
+          <title>Legal effect of subset criteria and evidences specified by the contracting autho</title>
+          <text_body>
+
+          The contracting authority SHOULD specify a subset of evidences from the superset evidences that are
+          relevant to a specific Call for Tender.
+ 
+          </text_body>
+        </p>
+        <p id="3.3.2.5">
+          <title>Scope of mutual recognition</title>
+          <text_body>
+
+          The scope of mutual recognition needs to be further clarified with regard to acceptance of foreign
+          procedures and the role and liability of trusted third parties.
+        </text_body>
+          
+        <text_body>
+          The scope of mutual recognition needs to be further clarified with regard to the provision of official
+          scans.
+
+          </text_body>
+
+          <p id="3.3.2.5.1">
+            <title>Mutual recognition and candidate statements</title>
+            <text_body>
+
+            The scope of mutual recognition needs to be further clarified with regard to the role of candidate
+            statements.
+
+            </text_body>
+          </p>
+          <p id="3.3.2.5.2">
+            <title>Equivalence of missing attestations</title>
+            <text_body>
+
+            It has to be defined which method and concept should be applied if there are missing attestations.
+
+            </text_body>
+          </p>
+        </p>
+        <p id="3.3.2.6">
+          <title>Correct implementation of directives into national procurement law</title>
+          <text_body>
+
+          It has to be guaranteed whether the directive is correctly implemented in national procurement law
+          with regard to VCD relevant articles 45-52.
+
+          </text_body>
+        </p>
+        <p id="3.3.2.7">
+          <title>Legal basis for exchanging validation data</title>
+          <text_body>
+
+          The legal foundation for exchanging validation values SHOULD be given in the home Member States
+          in order to support mutual recognition across Member States.
+
+          </text_body>
+        </p>
+        <p id="3.3.2.8">
+          <title>Legal requirements regarding service providers</title>
+          <p id="3.3.2.8.1">
+            <title>European Service Provider</title>
+            <text_body>
+
+            The legal status and legitimacy of the European Service Provider MUST be defined.
+          </text_body>
+          
+          <text_body>
+            The responsibility of the European Service Provider MUST be defined (e.g. definitions, rule-set).
+            The liability of the European Service Provider MUST be defined.
+          </text_body>
+          
+          <text_body>
+            The legal regulation applicable for the European Service Provider MUST be defined.
+          </text_body>
+          
+          <text_body>
+            A suitable way to establish the relevant regulation for the European Service Provider MUST be
+            defined.
+
+            </text_body>
+          </p>
+          <p id="3.3.2.8.1">
+            <title>National Service Providers</title>
+            <text_body>
+
+            The legal status and legitimacy of the National Service Provider MUST be defined.
+          </text_body>
+          
+          <text_body>
+            The responsibility and the related processes of the National Service Provider MUST be defined (e.g.
+            mapping activity, compilation of VCD package).
+          </text_body>
+          
+          <text_body>
+            The liability of the National Service Provider (depending on its legal status) MUST be defined.
+          </text_body>
+          
+          <text_body>
+            The legal regulation applicable for the National Service Provider MUST be defined.
+          </text_body>
+          
+          <text_body>
+            A suitable way to establish the relevant regulations for the National Service Provider MUST be defined
+            (e.g. special legal regulations concerning VCD service provision).
+          </text_body>
+          
+          <text_body>
+            Regulations concerning monetary aspects of the VCD service provision MUST be defined, therefore
+            related legal regulations (e.g. competition protection act) MUST be considered.
+
+            </text_body>
+          </p>
+        </p>
+        <p id="3.3.2.9">
+          <title>Legal requirements regarding the collection of evidences</title>
+          <text_body>
+
+          Special legal regulations for evidences MUST be considered (e.g. for extract from the register of
+          conviction).
+        </text_body>
+          
+        <text_body>
+          Regulations for handling the non-existence of selected evidence requested in a MS MUST be defined
+          and made operational.
+
+          </text_body>
+        </p>
+        <p id="3.3.2.10">
+          <title>Legal requirements regarding data protection</title>
+          <text_body>
+
+          Relevant regulations of national data protection acts MUST be analysed and considered.
+          Additional requirements for cross-border data exchange MUST be analysed and considered.
+
+          </text_body>
+        </p>
+        <p id="3.3.2.11">
+          <title>Separation of VCD package and tender</title>
+          <text_body>
+
+          It MUST be clarified which prospects and limitations exists within a Member State to separate a VCD
+          package from the tender itself.
+
+          </text_body>
+        </p>
+        <p id="3.3.2.12">
+          <title>Trust model between the entities involved</title>
+          <text_body>
+
+          A trust model and trust system MUST be defined from a legal point of view for every process which
+          includes the roles and responsibilities of the entities involved.
+
+          </text_body>
+        </p>
+        <p id="3.3.2.13">
+          <title>Legal Validity</title>
+          <text_body>
+
+          Electronic signature, with the same legal meaning of handwritten signature, SHOULD be encouraged
+          in cross-border scenario.
+        </text_body>
+          
+        <text_body>
+          The regulations concerning the use of electronic documents, the exchange or download of electronic
+          documents (e.g. mandatory usage of an e-signature) MUST be considered (especially regulations
+          from national procurement act and directive 2004/18/EC).
+        </text_body>
+          
+        <text_body>
+          A process for document handling compliant with the relevant legal regulations MUST be defined
+          (especially with respect to the data protection acts).
+
+          </text_body>
+        </p>
+      </p>
+    </p>
+    <p id="3.4">
+      <title>Technical Framework (Infrastructure specific)</title>
+
+      <p id="3.4.2">
+        <title>Technical Requirements</title>
+
+        <p id="3.4.2.1">
+          <title>Interrelation of governance models of WP2 and WP8</title>
+          <text_body>
+
+          It MUST be clarified how the governance model of WP2 fits into the overall governance model of WP8.
+
+          </text_body>
+        </p>
+        <p id="3.4.2.2">
+          <title>Authentication of PEPPOL Actors</title>
+          <text_body>
+
+          WP2 stakeholders MUST be authenticated to the VCD system and for the PEPPOL infrastructure.
+        </text_body>
+          
+        <text_body>
+          The identity and access management procedures for creating a VCD account SHOULD be
+          harmonized with the registration procedure of the overall infrastructure provided by WP 8.
+        </text_body>
+          
+        <text_body>
+          A single-sign-on SHOULD be implemented in order to allow identity and access management across
+          different systems.
+
+          </text_body>
+        </p>
+        <p id="3.4.2.3">
+          <title>Allocation of identifiers</title>
+          <text_body>
+
+          A method MUST be found how to allocate identifiers to the participants that use the infrastructure for
+          transportation of VCDs and related services.
+
+          </text_body>
+        </p>
+        <p id="3.4.2.4">
+          <title>Identity</title>
+          <text_body>
+          Every party participating MUST be uniquely identifiable
+          </text_body>
+        </p>
+        <p id="3.4.2.5">
+          <title>Addressability</title>
+          <text_body>
+
+          Every party participating SHOULD have a secure and verifiable electronic address.
+          </text_body>
+        </p>
+        <p id="3.4.2.6">
+          <title>Discovery</title>
+          <text_body>
+
+        In stage 4 it MUST be possible to discover the verified electronic address for an identified party.
+          </text_body>
+        </p>
+        <p id="3.4.2.7">
+          <title>Access Points to the PEPPOL infrastructure</title>
+          <text_body>
+
+          It MUST be clarified which are the best access points for economic operators to use the infrastructure
+          for transportation of a VCD package.
+        </text_body>
+          
+        <text_body>
+          
+          It MUST be clarified whether the possibility exist to have access to web clients via the infrastructure in
+          order to have access to specific web services which depend upon functionalities provided by the
+          infrastructure.
+
+          </text_body>
+        </p>
+        <p id="3.4.2.8">
+          <title>Use of PEPPOL infrastructure to submit a VCD (next to a bid)</title>
+          <text_body>
+
+            
+          It MUST be clarified whether tendering platforms enable a separated submission of a VCD and the bid
+          itself.
+        </text_body>
+          
+        <text_body>
+          
+          The PEPPOL infrastructure MUST have the capability to submit a VCD to a contracting authority or
+          tendering platform.
+        </text_body>
+          
+        <text_body>
+          
+          The PEPPOL infrastructure SHOULD have the capability to submit a bid which contains a VCD.
+
+          </text_body>
+        </p>
+        <p id="3.4.2.9">
+          <title>Confidentiality</title>
+          <text_body>
+
+          It MUST be possible to guarantee confidentiality for specific documents.
+          </text_body>
+        </p>
+        <p id="3.4.2.10">
+          <title>Usage of validation service provided by WP1</title>
+          <text_body>
+
+          It MUST be possible to apply the validation service provided by WP1 to a VCD in order to enable
+          economic operators to guarantee data integrity and confidentiality of a VCD.
+        </text_body>
+          
+          <text_body>
+          It MUST be clarified whether the VCD can use the validation service of WP1 if the transportation
+          infrastructure is not used by an economic operator.
+
+          
+          </text_body>
+        </p>
+        <p id="3.4.2.11">
+          <title>Reliability</title>
+          <text_body>
+          Transport mechanisms between party’s addresses MUST be reliable.
+          </text_body>
+        </p>
+        <p id="3.4.2.12">
+          <title>Security</title>
+          <text_body>
+          Transport mechanisms between party’s addresses MUST be secure.
+          </text_body>
+        </p>
+        <p id="3.4.2.13">
+          <title>Data Integrity</title>
+          <text_body>
+          It MUST be assured that business document instances are consistent and correct during
+          transportation, validation or transformation operations.
+          </text_body>
+        </p>
+        <p id="3.4.2.14">
+          <title>Non-repudiation of origin</title>
+          <text_body>
+          Authentication of origin for business document instances MUST be supported.
+          </text_body>
+        </p>
+        <p id="3.4.2.15">
+          <title>Time stamping</title>
+          <text_body>
+          Time stamping SHOULD be applied in some processes to certify relevant date and time.
+          </text_body>
+        </p>
+        <p id="3.4.2.16">
+          <title>Time stamping</title>
+          <text_body>
+          The electronic procurement process MUST have an audit trailing to ensure transparency for both
+          parties.
+          </text_body>
+        </p>
+      </p>
+    </p>
+  </p>
+
+</req_document> 

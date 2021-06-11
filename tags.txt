@@ -1916,3 +1916,379 @@
 54~If there are failures of the trainborne equipment which compromise the safety of train supervision, the ETCS trainborne equipment shall immediately command the brake and bring the train to a stop.
 2~The occurrence of a failure shall be displayed on the DMI.
 2~In ETCS with RBC this restriction on performance shall, if possible be transmitted to the RBC.
+1~KeePass must be downloaded and installed
+6~Master Password has no limits in length, A whole sentence can be used with more than 100 characters.
+4~Folder selected must be of type the database can read and that is name dot kdb
+10~Databases must have different names or else the previews one will be replace if selected
+96~There must be entries in the database in order for them to be printed
+30~All data related to the word must be shown, For example if user types "abc" and abc is part of a password and of a username, both entries must be shown
+30~A name is required in order for the new group or subgroup to be created
+1~A subgroup cannot be created when no group is selected
+20~A name is required in order for the group or subgroup to be renamed
+13~In order to find something in a group a word must be placed in the find field
+2~An entry must belong to a group to be created
+1~When the password field is completed the repeat password field must be completed
+1~Password field and repeat password field must be identical
+2~An entry must be selected to be viewed or modified
+1~When the password field is changed the repeat password field must be Changed and be identical with password field
+2~An entry must be selected before it is duplicated
+1~An entry must be selected to be deleted
+3~An internet connection and a browser are required in order to download new language translations
+3~The prefix "Auto Type:" is required in front of each sequence
+3~Sequence's length must not be more than a line (59 characters)
+14~If two auto types are referred in one note field, only the first is used
+4~Only one database file is allowed in command line options
+6~In case a space is found in the path, it must be enclosed into quotes
+5~If a master password is required to unlock the database, the database doesn't open unless the password is entered
+5~If a key file is required to unlock the database, the database doesn't open unless the key file is present
+135~If there is a composite key, both master password and key file are required
+2~In case of lost master password or key file, the database never unlocks again, There is no recovery
+4~There is no backdoor or key that unlocks all databases
+1~File formats are not specialized password database formats
+14~File formats only specify a low level layout of stored data
+1~Global hot key cannot be changed
+1~According to restriction rules that are applied every time.
+2~Title, username or URL cannot be changed in a TAN entry.
+2~When a TAN is used, it expires automatically and can never be used again.
+281~Internet connection and a browser are required in order for several functions to be executed such as downloading plugins
+204~Liability: In law a legal liability is a situation in which a person or organisation is financially and legally responsible.
+369658~The liability of the organisation that governs infrastructure and mapping facility has to be defined in order to ensure trust into the system and particular mapping results?
+18~The Liability of organisation that governs the infrastructure and mapping facility MUST be defined
+42~Sustainability: Sustainability is the capacity to maintain a certain process or state into the future.
+2~The governing model must ensure that the state of the mapping system will be kept over time.
+13~Therefore the mapping system has to be based on the commonly agreed mapping and no changes are allowed without a common agreement.
+9~The mapping facility MUST ensure sustainability of the system over time based on commonly agreed mapping schemes.
+4468~Maintainability: The mapping has to be easily maintainable which could be of interest in the case of changes of the legal basis on national or European level.
+5~A formal procedure has to be found how changes are applied to the system.
+10~Moreover an organisation or institution that governs the process of change management has to be defined.
+1~A formal procedure to make changes to the system MUST be defined.
+4~Provision of an update mechanism maintained by the individual Member State.
+4~The pre VCD mapping tool is openly accessible for economic operators and contracting authorities etc.
+2~The tool interface is available in the official languages of the European Union.
+6792502~A powerful search mechanism is implemented to deliver good results when economic operators query the pre VCD mapping tool in order to understand what evidences he can deliver to confer to the selection and exclusion criteria set in a public tender in another Member State.
+231648~The results are delivered in a format simple to use for the economic operators for example a check list of evidences he can collect from respective issuing bodies in his country, which fulfil the selection criteria and prove the non conformance with exclusion criteria set by the contracting authority from a different Member State.
+436~The Member States shall agree on a common representation format for the information they intend to supply into the knowledge base supporting the tool's operations.
+48~The Member States shall supply the information generated from the analysis of the national context they represent.
+8~The Member States need to update the mapping in case of any change within a short time frame (for example five days after a legal change has been put into force).
+68~The European service provider for the pre VCD mapping tool has to ensure that European legal changes are implemented quickly (for example within five days after enforcement).
+47914~The European service provider takes responsibility of the operative implementation and compliance of the mapping model implemented in the pre VCD mapping tool with the respective European and national conditions.
+252~Hence, it must be established and funded with clearly defined responsibilities for maintenance and conformance assessment between national solutions.
+5~The European service provider sets up a formal definition of the tool generated results.
+2~The European service provider defines the criteria for a "service contract" to be formally agreed with "users".
+23~Identity and access management MUST provide a functionality to register an economic operator in a formal procedure in order to create a VCD account.
+2528~Identity and access management MUST provide an interface to submit sensitive economic operator data (for example by uploading attestations that verify sensitive economic operator data) in order to allow the economic operator to apply for the creation of a VCD account.
+6~Sensitive economic operator data MUST be verified through a formal procedure by an officer.
+5~An officer has to create a VCD account for the economic operator.
+2~Sensitive economic operator data MUST be placed to a VCD account by an officer.
+52~Identity and access management MUST provide a functionality that enables the economic operator to receive his log in data.
+72~The authentication within identity and access management SHOULD provide a single sign on functionality that can be used across other systems.
+30~A change procedure MUST be defined in order to modify sensitive economic operator data that is connected to the VCD account.
+2~The economic operator MUST be able to delete his account.
+4~MUST be clearly defined which economic operator data are sensitive and belong to identity and access management.
+34~A single sign on SHOULD be implemented in order to allow identity and access management across different systems.
+233~The identity and access management procedures for creating a VCD account SHOULD be harmonized with the registration procedure of the overall infrastructure provided by WP8.
+256~The VCD System SHOULD make use of a single sign on interface and function in order to submit login data.
+8~The VCD system MUST provide a functionality to check through identity and access management whether an economic operator has sufficient user rights to access his account.
+6~The VCD system MUST provide an interface where the economic operator can provide nonsensitive economic operator data.
+12~The VCD system MUST provide an interface where tender specific data can be either fetched from or be provided through (for example criteria of qualitative selection and exclusion).
+4~The VCD system MUST provide an interface where the economic operator can request the creation of a VCD package.
+14~The VCD system MUST have an interface to receive and process the information (mapping of evidence) provided by the pre VCD mapping tool.
+46~The VCD system MUST provide a functionality that suggests a possible compilation of the VCD to the economic operator according to the tender specific criteria.
+8~The VCD system MUST provide a functionality where the economic operator can decide which particular attestation services should be invoked and collected.
+726~The VCD system MUST provide a functionality that displays the attestation services that cannot be invoked automatically and that have to be manually added by the economic operator.
+200~The VCD system must provide a functionality to request attestations that can be collected automatically via an issuing body.
+626~The VCD system MUST have an interface or technical access to retrieve attestations that can be automatically retrieved from issuing bodies.
+24~The VCD system MUST have a functionality to extract structural data of evidence from attestations that can be retrieved automatically.
+16~The VCD system MUST have an interface to submit or upload evidence that have to be provided manually by the economic operator.
+27~The evidence submitted to the VCD system MUST correspond to the mapping information suggested by the VCD system (or the pre VCD mapping tool).
+11~The VCD system MUST provide an interface where an economic operator can add structural data of evidence that belong to specific evidence.
+4~The VCD system SHOULD provide an interface where a translator or economic operator can submit certified translations to specific evidence.
+3~The VCD system MUST provide and interface where the economic operator can initiate the compilation process.
+84~The VCD package MUST provide a functionality to add structural VCD package data to the VCD package and VCD system (for example log file) during the compilation process.
+232~The VCD package MUST provide a functionality to add tender specific data to the VCD package and VCD system (for example log file) during the compilation process.
+116~The VCD package MUST provide a functionality to add economic operator data to the VCD package and VCD system (for example log file) during the compilation process.
+232~The VCD package MUST provide a functionality to add tender specific data to the VCD package and VCD system (for example log file) during the compilation process.
+120~The VCD package MUST provide a functionality to add structural data of evidence to the VCD package and VCD system (for example log file) during the compilation process
+2~The VCD package MUST provide a functionality to add evidences to the VCD package and VCD system (for example log file) during the compilation process.
+78~The VCD package MUST provide a functionality to add translations to the VCD package and VCD system (for example log file) during the compilation process
+14~The VCD system MUST provide a functionality to notify the economic operator when the compilation process is finished.
+2~The VCD system MUST provide interfaces to deliver the VCD to the economic operator.
+2~VCD system MUST be operated by at least one national VCD service provider
+1~The VCD system MUST have the status of a trusted system.
+2~The national VCD service provider that hosts the system must have the status of a trusted entity.
+208~Direct access to attestations issued by (national) issuing bodies MUST be established through organisational agreements (for example service level agreements).
+14~Technical access to the relevant attestations issued by (national) issuing SHOULD be supported through national law.
+28~The compilation suggestion that is given to the economic operator by the VCD system MUST be reliable with regard to fulfilment of tender specific requirements.
+1~User rights for the VCD system MUST be defined.
+1~Structural data of evidence MUST be defined.
+24~Semantic interoperability of structural data of evidence SHOULD be ensured through an agreement procedure among the WP partners.
+36~The evidence submitted to the VCD system MUST be eligible for the requirements mentioned by §§45– 46 of European Directive 2004 or 18 or EC.
+66~The VCD transportation system MUST provide a functionality that enables both parties involved, contracting authorities and economic operators, to authenticate to the VCD transportation system before using it.
+252~The authentication to the VCD transportation system SHOULD make use of single sign in interface and function in order to submit login data.
+152~The VCD transportation system MUST provide a functionality that enables the economic operator to find an electronic address of a contracting authority for receiving VCD packages.
+170~The VCD transportation system MUST have an interface to connect to it in order to submit the VCD package to a contracting authority.
+14~The VCD transportation system MUST provide a functionality that supports the economic operator in submitting the VCD package to a contracting authority.
+3292~The VCD transportation system SHOULD provide a functionality that supports the economic operator in submitting the VCD package to a contracting authorities' procurement platform where the tender or bid has to be placed.
+4~The transportation system MUST provide an interface that enables contracting authorities to receive a VCD.
+4752~Both parties involved, contracting authorities and economic operators, MUST have an electronic address for receiving or sending VCD packages.
+6~The transport of a VCD package MUST be initiated by the economic operator.
+2~The choice of how to submit the VCD package to the contracting authority MUST be the one that is preferred by the economic operator.
+1141~Beside the transportation system (WP8) the economic operator SHOULD be able to use other electronic channels for submitting a VCD package to the contracting authority.
+42~It MUST be clarified which possibilities exist to utilize the infrastructure for submitting a VCD package directly to procurement platforms (for example via VPN).
+21~The transportation system MUST ensure that the VCD package is being delivered to the contracting authority
+5~The transport of a VCD package MUST be confidential.
+5~The transport of a VCD package MUST be reliable.
+5~The transport of a VCD package MUST be secure.
+7~The transport of a VCD package MUST ensure that the package has not been altered or modified during transportation or validation.
+2~Non repudiation of origin of a VCD package MUST be supported.
+1409~A VCD will carry a unique identifier and information about security and quality enhancing policies used by the certified VCD Service Provider when compiling the file.
+2~The VCD viewing system MUST provide a functionality to authenticate contracting authorities to view the data contained within a VCD package.
+568~The authentication to the VCD viewing system SHOULD make use of single sign on interface and function in order to submit login data.
+2~The VCD viewing system MUST display structural VCD package data contained in the VCD package
+4~The VCD viewing system MUST display tender specific data contained in the VCD package
+2~The VCD viewing system MUST display economic operator data contained in the VCD package
+4~The VCD viewing system MUST display tender specific data contained in the VCD package
+2~The VCD viewing system MUST display structural data of evidence contained in the VCD package
+4~The VCD viewing system MUST display evidences contained in the VCD package
+1~The VCD viewing system MUST display translations of evidences contained in the VCD package
+26~Member State of this work package SHOULD follow a common standard representation of the different types of data
+60~Member State of this work package SHOULD define a national version of the common standard representation of the different types of data.
+16~Any standard representation of the different types of data MUST be agreed upon the pilot partners.
+18~A method (for example reverse engineering) to develop a standard representation of the different types of data SHOULD be defined.
+1~A method for the versioning of the development of this common standard schema SHOULD be found.
+7840~A VCD system MUST provide functionality to collect and process context specific data for evidence that has to be provided manually or semi automatically by the issuing body, by the economic operator or any trusted third party.
+64~A VCD system MUST provide functionality to collect and process context specific data for evidence that has to be provided automatically by the issuing body.
+4~A VCD system MUST provide IT interfaces to issuing bodies which provide evidences in machine interpretable format.
+7~A VCD system MUST interact with the issuing bodies which provide evidences in machine interpretable format through IT interfaces.
+12~A VCD system MUST provide a user interface to the issuing body to provide context specific data for an evidence in a structured form (for example web interface, XML file upload).
+288~The VCD system MUST provide a functionality to validate the provided context specific data during the submission process of context specific data to ensure the data is consistent with the VCD advanced package schema.
+608~Interfaces MUST be defined to retrieve context specific data from issuing bodies either automatically or semi automatically.
+240~Interfaces SHOULD be defined that enable national VCD service providers to approve context specific data if they decide to take the role of a trusted third party.
+66~The rule set derived from legal requirements concerning "evidence checking" MUST be defined.
+92~he rule set allowing for a Stage 3 mapping among concepts expressed by the "context specific data" MUST be defined.
+68~The rule set derived from legal requirements concerning subcontracting and other consortium constellations MUST be defined
+10~A functionality to display context specific data SHOULD or MUST be included within any VCD.
+144~Any VCD advanced package MUST follow a common standard schema of context specific data that summarize and structure major information contained within context specific evidences.
+1~Context specific data MUST be machine interpretable
+32~Evidences that have a simple structure and limited variety of contents MUST be included into the common standard schema first.
+56640~WP2 SHOULD provide easy solutions for transforming the contents of context specific evidence into simple context specific representations (for example a Balance sheet can have several values but an easy representation could be the fulfilment of certain ranges for example below 1 Million or from 1 Million to 10 or …).
+1616~A semantic definition of each element or class of the common standard schema of context specific data MUST be created and has to ensure a common understanding.
+7488~A semantic definition of each element or class of the common standard schema of context specific data MUST ensure that these data is mutually recognized as replacement of the official translation of an evidences included.
+128~A method and agreement procedure to develop a common standard schema of context specific data MUST be defined.
+118128~This procedure must cover the technical aspects of data analysis (for example reverse engineering) as well as the organizational aspects (for example which context specific data is required from contracting authorities or under which circumstances would they would replace certified translation of evidence by context specific data).
+4~Any common standard schema of context specific data classes MUST be agreed upon the pilot partners.
+2~Representation of context specific data SHOULD be available in multiple languages
+144~Every pilot partner MUST follow the common standard schema of context specific data by defining a national version of it.
+1~A method for versioning the development of common standard schema of context specific data SHOULD be found.
+19~A VCD system MUST provide a user interface to the economic operator to initiate the creation of a VCD advanced package.
+28~A VCD system MUST provide a user interface to the economic operator to provide existing VCD packages of other economic operators when specific disclosure options have been activated.
+48~A VCD system MUST provide a functionality to check, whet her the structural VCD package data of existing VCD packages of other economic operators are consistent with the VCD advanced package schema of other economic operators, or not
+880~A VCD system MUST provide a functionality to check, whether the tender specific data of existing VCD packages are consistent with the tender specific data of other VCD packages.
+54~A VCD system MUST provide functionality to merge the following data from several existing VCD packages of other economic operators:
+1448~A VCD system MUST provide functionality to compile the data which result from the evidence collection process and the data provided by the economic operator in the VCD advanced package creation.
+174~Merging of VCD simple packages and VCD advanced packages into a VCD advanced package SHOULD be possible
+96~A VCD system MUST provide a user interface to the economic operator to initiate the recompilation of an existing VCD package into a VCD advanced package.
+10~A VCD system MUST provide a user interface to the economic operator for uploading an existing VCD package
+2~A VCD system MUST provide a functionality to decompose an existing VCD package
+27~A VCD system MUST provide a functionality to identify outdated or obsolete evidences
+1~A VCD system must provide a functionality to retrieve actual instances of outdated evidences
+2~Re compiling a VCD simple package into a VCD advanced package MUST be possible
+6~Re compiling a VCD advanced package into a VCD advanced package MUST be possible
+124~structured) context specific data by manual means in order to create context specific data using the semi automated approach.
+1344~The VCD system MUST provide functionality and an interface to the economic operator that enables him to mandate a certain contracting authority to request attestations on demand.
+2784~The VCD system MUST detect which attestations can be used by this feature (for example they have to be sufficiently described through context specific data and structural data of evidence).
+2~The VCD system MUST provide a functionality that enables National VCD Service Providers to store attestations.
+10~A functionality for referencing to attestations MUST be implemented within the VCD system.
+24~The VCD system MUST ensure that a contracting authority is able to request attestations via the provided reference (including time restrictions).
+2232~The functionality for referencing to attestations within the VCD MUST be implemented, either VCD specific or contracting authority specific, in order to approve whether the contracting authority has sufficient rights for requesting the attestations.
+33~VCD specific or contracting authority specific reference to attestations MUST be stored within the VCD system (processing instructions).
+6~The VCD system MUST provide a functionally to check whether a contracting authority has sufficient rights and has been mandated by the economic operator to retrieve attestations.
+80~The VCD system MUST provide a functionality and an interface that enables contracting authorities to retrieve the attestation from the storage.
+40~The VCD system MUST ensure that the attestation that is requested by the contracting authority is still valid at the time of awarding or when the Call for Tender is closed.
+12~The VCD system MUST provide a functionality that initiates a conflict resolution process between economic operator and contracting authority if errors occur or when certain attestation or a translation cannot be delivered on demand.
+144288~The VCD system SHOULD provide a functionality to approve attestations through validation data and to make this approval visible within a VCD networked package when a National VCD Service provider takes the role of a national validation point in accordance with Article 52 (1) of Directive 2004 or 18 or EC and EFTA EEA Committee decision 68 or 2006.
+18600~There MUST be an access policy that is issued by the economic operator that mandates a contracting authority to request attestation from the national VCD service provider on demand.
+1~A general reference structure and syntax MUST be defined.
+40168190~This may include creating contracting authority specific or VCD specific references in order to identify a mandate that has been given by the economic operator to this contracting authority for retrieving attestation or even updates on it.
+3232~National and local political commitments and service level agreements MUST ensure that consensuses on roles and responsibilities are built with regard to this solution and in particular the National Service Providers who delivers attestations on demand.
+6336~There MUST be a service level agreement between the parties involved (Economic Operators, Contracting authorities, National Service Providers, and Trusted Attestation Service) about the response time of a delivery of attestations and data availability.
+393840~There MUST be a service level agreement between the parties involved (Economic Operators, Contracting authorities, National Service Providers, and Trusted Attestation Service) about conflict resolution that describe what to do when errors occur or when attestation or translations cannot be delivered "on demand".
+23~The attestations where an agreement on context specific formats can be reached most easily SHOULD be included first into the network.
+36~WP2 SHOULD provide easy solutions for displaying context specific data and should enable their validation through validation values
+884~Legal systems MUST ensure that context specific data and validation values have an equivalent value to the provision of conventional or traditional attestations (Scope of mutual recognition).
+1950~The National Service Providers SHOULD establish validation points in order to approve an economic operator in accordance with Article 52 (1) of Directive 2004 or 18 or EC.
+256~The national procurement law MUST ensure that National Service Provider can act as national validation points in accordance with Article 52 (1) of Directive 2004 or 18 or EC for economic operators.
+720~Liability issues of the National Service Providers MUST be clarified when they act as national validation points in accordance with Article 52 (1) of Directive 2004 or 18 or EC for economic operators.
+172~National procedures with regard to Article 52 (1) of Directive 2004 or 18 or EC MUST be mutually recognized and trusted in across borders.
+259~A list of recognized public authorities that are able to issue certain attestations in a particular Member State MUST be established.
+259~A list of recognized private entities that are able to issue certain attestations in a particular Member State SHOULD be established.
+2~Widely accepted national procedures and infrastructures SHOULD be utilized wherever possible.
+200~A national authority MUST support critical processes in order to increase the trust between the entities involved.
+12454~A national pilot solution may implement attestation validation feature but proof of conformance and checking is not a mandatory feature that has to be fulfilled by a national service provider.
+20~Any of the proposed stages SHOULD be applicable within a Member State who wishes to apply Article 52 and EFTA EEA Committee decision 68 or 2006.
+4692~A Member State MUST formally define an authority that is able to provide a proof of conformance to certain criteria if the Member State wishes to implement Article 52 or if Article 52 is already implemented.
+2770~The contracting authority has to specify a subset of the superset of criteria that is relevant to a specific Call for Tender so that any VCD application can perform the mapping later on
+8~Any VCD system must have an interface to provide tender specific data and (in particular the relevant criteria subset) in order to perform the mapping.
+72~The main subject of the VCD is the final submission of evidence to the contracting authority
+58~If there are multiple ways to provide evidence the choice of selecting a specific issuing service is left to the requester.
+267~An economic operator MUST be able to act as an issuing body for candidate statements or other evidence that cannot be directly or electronically retrieved by the VCD system.
+1~The electronic procurement framework MUST support organizations of any size and industry.
+7~The VCD solutions MUST be tested in specific cases by re processing historical tenders.
+4~The testing SHOULD be repeated regularly and especially after up dating of software.
+55368~A national solution will only be authorized to operate cross border when all tests are passed the testing has to be maintained and monitored by the European VCD Service Provider.
+6~Stakeholder MUST be found in order to re process historical tenders.
+32~Evidential documents exchanged between parties MUST be semantically harmonized in order to be processed electronically.
+1728~National criteria for qualitative selection and exclusion MUST correspond to European criteria which are derived from Article 45 50 and which are partially described in the Eligibility of Tenders.
+2~National criteria SHOULD be consistent among themselves and with European criteria.
+5~Any VCD instance MUST be specific with regards to a certain economic operator.
+5~Any VCD instance SHOULD be specific with regards to a certain tender.
+1~A unique VCD identifier needs to be established.
+787854~When implementing any tool, system or service WP2 MUST focus on mandatory requirements and evidences mentioned in Articles 45 and 46 first since theses Articles are not tender specific and therewith relevant for nearly all tenders.
+128~The mapping between evidences via requirements MUST have set a primary focus on the mandatory requirements and evidences of a VCD.
+90~Articles 47 to 50 open a wide range of different criteria which are tender and country specific thus they MUST be added stepwise to the pre VCD mapping tool (which may require a higher level mapping).
+100~Any VCD system SHOULD provide the opportunity to the economic operator to produce a complete VCD even if there are several issuing services that are not under control of a national service provider, do not have specific mapping to other documents defined in the pre VCD mapping tool and have to be provided by the economic operator manually.
+3~Any VCD system provides the functionality to add additional documents through placeholders.
+349528~Interfaces to submit evidence to the VCD system have to be defined along with common semantics in order to allow issuing bodies to further specify evidence with regard to structural data, context specific data and validation values.
+62~Develop a format that allows the presentation and displaying of the contents of a VCD package.
+36~The pre VCD mapping tool (Stage 1) MUST be filled with instances (defined) by every Member State since Stage 1 is a precondition for any other stage.
+12~The VCD simple package (Stage 2) lays the basic ground for the creation of VCDs and the implementation of other services mentioned in stages 3 and 4 so the key concepts of Stage 2 MUST be implemented in each Member States.
+1053~Stage 3 (VCD advanced package) and stage 4 (VCD networked package) introduce a set of optional functions that SHOULD be considered by each Member State when implementing a VCD.
+109~The stages are logically built upon each other but it MUST be possible to implement certain features of stage 4 if the necessary requirements for this are fulfilled in the lower stages even if maybe not all requirements are fulfilled in stage 3.
+174~PEPPOL WP2 is not focussing on the creation of context specific data of attestations or candidate statements in multilingual versions.
+12~If context specific data is provided in multilingual versions (for example XBRL, ECRIS etc.) this has a high priority to be included into stage 3 and stage 4.
+12~If attestations are described sufficiently in multiple lingual versions they SHOULD be included first to stages 3 and 4.
+450~If the prove concentrates on qualitative aspects (for example provide balance sheet or extracts from it in order to proof its economic or financial standing) then the validation value cannot be applied.
+81984~Instead such an attestation can be included into VCD stages 3 and 4 if it is sufficiently described through context specific data in multilingual versions (for example XBRL, ECRIS etc.).
+21~Classification schemes for goods, services and code lists SHOULD be publicly available and identified in the document objects.
+34~The VCD SHOULD support that economic operators from foreign member states may not be treated harder than own member state's economic operators.
+30~The possibility of a definition of a minimum validity of a VCD package has to be defined
+251016~The provision of attestations that are available in context specific formats including multi lingual versions and their transformation into any target language has to guarantee similar legal status and effect is reached compared to official translation.
+92~The contracting authority SHOULD specify a subset of evidences from the superset evidences that are relevant to a specific Call for Tender.
+164~The scope of mutual recognition needs to be further clarified with regard to acceptance of foreign procedures and the role and liability of trusted third parties.
+362~The scope of mutual recognition needs to be further clarified with regard to the provision of official scans.
+46~The scope of mutual recognition needs to be further clarified with regard to the role of candidate statements.
+223~It has to be defined which method and concept should be applied if there are missing attestations.
+96~It has to be guaranteed whether the directive is correctly implemented in national procurement law with regard to VCD relevant articles 45 52.
+144~The legal foundation for exchanging validation values SHOULD be given in the home Member States in order to support mutual recognition across Member States.
+1~The legal status and legitimacy of the European Service Provider MUST be defined.
+2~The responsibility of the European Service Provider MUST be defined (for example definitions, rule set).
+1~The liability of the European Service Provider MUST be defined.
+1~The legal regulation applicable for the European Service Provider MUST be defined.
+6~A suitable way to establish the relevant regulation for the European Service Provider MUST be defined.
+1~The legal status and legitimacy of the National Service Provider MUST be defined.
+32~The responsibility and the related processes of the National Service Provider MUST be defined (for example mapping activity, compilation of VCD package).
+1~The liability of the National Service Provider (depending on its legal status) MUST be defined.
+1~The legal regulation applicable for the National Service Provider MUST be defined.
+48~A suitable way to establish the relevant regulations for the National Service Provider MUST be defined (for example special legal regulations concerning VCD service provision).
+60~Regulations concerning monetary aspects of the VCD service provision MUST be defined, therefore related legal regulations (for example competition protection act) MUST be considered.
+24~Special legal regulations for evidences MUST be considered (for example for extract from the register of conviction).
+2~Regulations for handling the non existence of selected evidence requested in a MS MUST be defined and made operational.
+2~Relevant regulations of national data protection acts MUST be analysed and considered.
+4~Additional requirements for cross border data exchange MUST be analysed and considered.
+160~It MUST be clarified which prospects and limitations exists within a Member State to separate a VCD package from the tender itself.
+5024~A trust model and trust system MUST be defined from a legal point of view for every process which includes the roles and responsibilities of the entities involved.
+24~Electronic signature, with the same legal meaning of handwritten signature, SHOULD be encouraged in cross border scenario.
+1232~The regulations concerning the use of electronic documents, the exchange or download of electronic documents (for example mandatory usage of an e signature) MUST be considered (especially regulations from national procurement act and directive 2004 or 18 or EC).
+336~A process for document handling compliant with the relevant legal regulations MUST be defined (especially with respect to the data protection acts).
+28~It MUST be clarified how the governance model of WP2 fits into the overall governance model of WP8.
+2~WP2 stakeholders MUST be authenticated to the VCD system and for the PEPPOL infrastructure.
+466~The identity and access management procedures for creating a VCD account SHOULD be harmonized with the registration procedure of the overall infrastructure provided by WP 8.
+34~A single sign on SHOULD be implemented in order to allow identity and access management across different systems.
+96~A method MUST be found how to allocate identifiers to the participants that use the infrastructure for transportation of VCDs and related services.
+1~Every party participating MUST be uniquely identifiable
+1~Every party participating SHOULD have a secure and verifiable electronic address.
+10~In stage 4 it MUST be possible to discover the verified electronic address for an identified party.
+290~It MUST be clarified which are the best access points for economic operators to use the infrastructure for transportation of a VCD package.
+23698~It MUST be clarified whether the possibility exist to have access to web clients via the infrastructure in order to have access to specific web services which depend upon functionalities provided by the infrastructure.
+4~It MUST be clarified whether tendering platforms enable a separated submission of a VCD and the bid itself.
+10~The PEPPOL infrastructure MUST have the capability to submit a VCD to a contracting authority or tendering platform.
+5~The PEPPOL infrastructure SHOULD have the capability to submit a bid which contains a VCD.
+5~It MUST be possible to guarantee confidentiality for specific documents.
+9976~It MUST be possible to apply the validation service provided by WP1 to a VCD in order to enable economic operators to guarantee data integrity and confidentiality of a VCD.
+18~It MUST be clarified whether the VCD can use the validation service of WP1 if the transportation infrastructure is not used by an economic operator.
+8~Transport mechanisms between party's addresses MUST be reliable.
+8~Transport mechanisms between party's addresses MUST be secure.
+124~It MUST be assured that business document instances are consistent and correct during transportation, validation or transformation operations.
+1~Authentication of origin for business document instances MUST be supported.
+63~Time stamping SHOULD be applied in some processes to certify relevant date and time.
+25~The electronic procurement process MUST have an audit trailing to ensure transparency for both parties.
+12~Torrent search will share the same search bar with the streaming search.
+1~Database of torrent sites can be updated via the internet.
+260~There will be a tick box to allow the user to choose to include torrent searching in the search.
+6~Query will retrieve the number of seed and peers, size of the file, date posted and a link to the webpage itself.
+12~If no results are found on a search it will display a message "No results were found for this search."
+91~Results will be arranged in size or date or alphabetical order by clicking on the column headers.
+50~There will be page button for the user to navigate the results.
+8~Streaming search will share the same search bar with the torrent search.
+21~Database of video hosting and video linking sites can be updated via the internet.
+320~There will be a tick box to allow the user to choose to include video host searching in the search.
+320~There will be a tick box to allow the user to choose to include video link searching in the search.
+213~Query to video hosting sites will retrieve full video name, length, date posted and a link to the video itself.
+12~Query to video link sites will retrieve the show's name, episode name and a link to the webpage itself.
+12~If no results are found on a search it will display a message "No results were found for this search."
+91~Results will be arranged in length or date or alphabetical order by clicking on the column headers.
+50~There will be page button for the user to navigate the results.
+5~Query times will take no longer than 5 seconds to any website.
+42~Sending the hyperlink to the default browser will take less than 1 second.
+5~Loading the program will take less than 10 seconds.
+1~Any torrent result with 0 seeds will not be displayed.
+10~Sorting results should take less than 0.1 seconds.
+1~A results page will display 100 results.
+2~Any torrent result with a rating of less than 1 will not be displayed.
+68~System shall display the hyperlinks and descriptions for the user to perform the desired functions as specified in the related UIS.
+16~The User shall be able to view the hyperlinks and descriptions listed.
+48~The User shall be able to choose a function by clicking the hyperlink.
+28~The system shall display the desired operational page for the user after clicking the hyperlink.
+6~A user with admin privileges shall be able to Add or Create a new user and associate the user with specified role(s) in the system.
+2~The system shall display an error message if the new user is found in the system system.
+4~The system shall display an error message if the new user is not active in the Active Directory.
+2~The system shall display the xxx tab as the default tab.
+4~The user shall be able to create or add a new user manually or from a template.
+16~The user record shall inherit all specified role(s) settings in the template when the user record is created from the user template
+13~The user shall be able to add additional roles manually while creating or adding a new user from a user template.
+330~The system shall save the user info to the database with specified roles associated with divisions for the newly created or added user.
+195~The system shall perform a search on the system user display name and user name columns in the user tables to find the user and verify the user's existence.
+6216~The system shall perform a search in the Active Directory to verify the status of the user, Active or Inactive within the company—when the user attempts to create or add a new user in the system.
+80~The system shall generate a standard confirmation message after saving data and warning or caution messages after the cancel or close button is clicked.
+8~The user must have the flexibility to click any tab to commence the adding process, although the xxx Tab shall display as the default tab.
+152~All required fields as specified in the UIS must be marked with a red asterisk alerting the user to fill the required fields in.
+92~The user shall be able to save data after creating or adding a new user or cancel data to abort the process.
+44~The system shall clear up data if the user chooses to click the Cancel button in the midst of creating or adding a new user.
+32~The system shall direct the user to the xxx Page if the user chooses to click the close button without entering any data.
+66~The user must associate at least one role, division, designator code, and lab location at the time of creating or adding a new user.
+98~The user must fill in the required fields—User Name and Display Name—in the User Information section at the time of creating or adding a new user.
+6956576~The system shall generate a standard error or warning message after the user attempts to save data without associating one of each of the following criteria—xxx—and or or without filling in the required fields in the User Information section.
+68~The Project Team must demonstrate mockups of UI changes to project stakeholders early in the development process.
+20~The Project Team must permit reasonable adjustment to the user interfaces of new functionality by project stakeholders when project schedule permits those adjustments.
+16~The Project Team shall schedule updates to the production environment only on Tuesdays between 7pm and 7am.
+332~The Project Team must perform applicable and appropriate testing against new functionality prior to releasing that functionality or build to the production environment.
+536~The project Team must allow a reasonable time to conduct User Acceptance Testing (UAT) against the built functionalities prior to deploying the product to the production environment.
+6~The Development Team shall define coding standards for the application and follow those standards consistently.
+168~The Development Team shall be required to adjust existing source code to follow accepted coding standards only if that source code must be modified.
+52~The system shall log errors, warnings, and informational messages to an external log file on the application server.
+296~The Development Team shall be required to adjust existing source code to use the external log file only if that source code must be modified to implement another requirement.
+17~The system shall log an error message to the external data file when the user is directed to the system error page.
+34~The system shall send a notification email to a Client Services email distribution list if the user is directed to the xxx error page.
+4~The Development Team shall develop functionalities using the xx language and on the supported dot NET 3 5 Platform.
+4~The Development Team shall utilize established open source frameworks instead of proprietary custom components wherever appropriate.
+21~The system shall continue to depend upon and use a single SQL Server 2008 database.
+80~The Technical Owner or Lead shall provide signoff before any the system build can be deployed to the production environment.
+12~The Development Team shall perform weekly integrations of the system and deploy these system updates to the Staging environment.
+4~The Development Team shall label every scheduled the system build in the source control system.
+1008~The Development Team shall perform scheduled the system builds using code checked out of source control using the label as defined and specified.
+456~The Development Team shall develop and then send out release notes via e mail to all Project Team after each the system build deployed to the Staging environment.
+162~The Technical Lead shall perform code reviews of every system change before those changes may be committed to source control.
+20~The QA or QC Team must perform regression testing against all scheduled builds.
+6~RoboHelp version 8 will be used to create the online the system Help hypertext links.
+602~the system will display a hypertext link labeled "Help" at the top right corner on each of the user screens to provide assistance to the user.
+205~Each of the Help topic pop up windows will contain that same content that is available within the system user's manuals.
+622~The system shall provide the capability to open a pop up window displaying information about the specific page along with links to supporting help topics upon selecting each Help link.
+472~The system shall display "the system Overview" page located under the Getting Started section of Help as default help topic page that will load upon selecting Help hypertext link.
+25992~The system must allow users to easily navigate through each of the help topics by selecting a corresponding hypertext link provided in the left frame of the pop up Help window.
+34~The system shall display the company logo in the top, right side of the screen on each of the help pages.
+20~The system must exhibit each of the help pages using the same color scheme and background as specified.
+40~The system shall provide searching ability to the users to quickly find specific topic material through the online help tool.
+110~The system shall provide an index to the users for a more in depth search of topic contents through the online help tool.
+258~The system shall provide a Glossary for industry related terms associated with the company and the system to the users through the online help tool.
+2~The system shall retain existing HIPAA compliance capabilities.
+13~The system shall follow HIPAA compliance capabilities in new functionality introduced to the system.

@@ -1,0 +1,333 @@
+﻿<req_document>
+ 
+     <p id="3">
+         <p id="3.1">
+             <title>New Database</title>
+ 
+             <p id="3.1.3">
+                 <title>Functional Requirements</title>
+                 <req id="1">
+                     <text_body>
+ KeePass must be downloaded and installed
+                     </text_body>
+                 </req>
+                 <req id="2">
+                     <text_body>
+ Master Password has no limits in length, A whole sentence can be used with more than 100 characters.
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.1 -->
+         <p id="3.2">
+             <title>Open Database</title>
+ 
+             <p id="3.2.3">
+                 <title>Functional Requirements</title>
+                 <req id="3">
+                     <text_body>
+ Folder selected must be of type the database can read and that is name dot kdb
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.2 -->
+         <p id="3.3">
+ 
+             <title>Save Database</title>
+             <p id="3.3.3">
+                 <title>Functional Requirements</title>
+                 <req id="4">
+                     <text_body>
+ Databases must have different names or else the previews one will be replace if selected
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.3 -->
+         <p id="3.4">
+             <title>Print Database</title>
+ 
+             <p id="3.4.3">
+                 <title>Functional Requirements</title>
+                 <req id="5">
+                     <text_body>
+ There must be entries in the database in order for them to be printed
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.4 -->
+         <p id="3.5">
+             <title>Search Database</title>
+ 
+             <p id="3.5.2.">
+                 <title>Stimulus/Response Sequences</title>
+                
+                 <p id="3.5.3">
+                     <title>Functional Requirements</title>
+                     <req id="6">
+                         <text_body>
+ All data related to the word must be shown, For example if user types “abc” and abc is part of a password and of a username, both entries must be shown
+                         </text_body>
+                     </req>
+                 </p>
+             </p>            <!-- 3.5 -->
+         </p>        <!-- 3 -->
+         <p id="3.6">
+             <title>Add Group/Subgroup</title>
+ 
+             <p id="3.6.3">
+                 <title>Functional Requirements</title>
+                 <req id="7">
+                     <text_body>
+ A name is required in order for the new group/subgroup to be created
+                     </text_body>
+                 </req>
+                 <req id="8">
+                     <text_body>
+ A subgroup cannot be created when no group is selected
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.6 -->
+         <p id="3.7">
+             <title>Modify group/subgroup</title>
+ 
+             <p id="3.7.3">
+ 
+                 <title>Functional Requirements</title>
+                 <req id="9">
+                     <text_body>
+ A name is required in order for the group/subgroup to be renamed
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.7 -->
+ 
+         <p id="3.9">
+             <title>Find Group/Subgroup</title>
+ 
+             <p id="3.9.3">
+ 
+                 <title>Functional Requirements</title>
+                 <req id="10">
+                     <text_body>
+ In order to find something in a group a word must be placed in the find field
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.9 -->
+         <p id="3.10">
+             <title>Add Entry</title>
+ 
+             <p id="3.10.3">
+                 <title>Functional Requirements</title>
+                 <req id="11">
+                     <text_body>
+ An entry must belong to a group to be created
+                     </text_body>
+                 </req>
+                 <req id="12">
+                     <text_body>
+ When the password field is completed the repeat password field must be completed
+                     </text_body>
+                 </req>
+                 <req id="13">
+                     <text_body>
+ Password field and repeat password field must be identical
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.10 -->
+         <p id="3.11">
+             <title>View/Edit Entry</title>
+ 
+             <p id="3.11.3">
+                 <title>Functional Requirements</title>
+                 <req id="14">
+                     <text_body>
+ An entry must be selected to be viewed or modified
+                     </text_body>
+                 </req>
+                 <req id="15">
+                     <text_body>
+ When the password field is changed the repeat password field must be
+ Changed and be identical with password field
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.11 -->
+         <p id="3.12">
+             <title>Duplicate Entry</title>
+ 
+             <p id="3.12.3">
+                 <title>Functional Requirements</title>
+                 <req id="16">
+                     <text_body>
+ An entry must be selected before it is duplicated
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.12 -->
+         <p id="3.13">
+             <title>Delete Entry</title>
+ 
+             <p id="3.13.3">
+                 <title>Functional Requirements</title>
+                 <text_body>
+ An entry must be selected to be deleted
+                 </text_body>
+             </p>
+         </p>        <!-- 3.13 -->
+         <p id="3.14">
+             <title>Change Language</title>
+ 
+             <p id="3.14.3">
+                 <title>Functional Requirements</title>
+                 <req id="18">
+                     <text_body>
+ An internet connection and a browser are required in order to download new language translations
+ 
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.14 -->
+         <p id="3.15">
+             <title>Auto-type</title>
+ 
+             <p id="3.15.2">
+                 <title>Functional Requirements</title>
+                 <req id="19">
+                     <text_body>
+ The prefix “Auto-Type:” is required in front of each sequence
+                     </text_body>
+                 </req>
+                 <req id="20">
+                     <text_body>
+ Sequence’s length must not be more than a line (59 characters)
+                     </text_body>
+                 </req>
+                 <req id="21">
+                     <text_body>
+ If two auto-types are referred in one note field, only the first is used
+                     </text_body>
+                 </req>
+             </p>            <!-- 3.15 -->
+         </p>        <!-- 3.15 -->
+         <p id="3.16">
+             <title>Command Line Options</title>
+ 
+             <p id="3.16.2">
+                 <title>Functional Requirements</title>
+                 <req id="22">
+                     <text_body>
+ Only one database file is allowed in command line options
+                     </text_body>
+                 </req>
+                 <req id="23">
+                     <text_body>
+ In case a space is found in the path, it must be enclosed into quotes
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.16 -->
+         <p id="3.17">
+             <title>Composite Master Key</title>
+ 
+             <p id="3.17.2">
+                 <title>Functional Requirements</title>
+                 <req id="24">
+                     <text_body>
+ If a master password is required to unlock the database, the database doesn’t
+ open unless the password is entered
+                     </text_body>
+                 </req>
+                 <req id="25">
+                     <text_body>
+ If a key file is required to unlock the database, the database doesn’t open unless the key file is present
+                     </text_body>
+                 </req>
+                 <req id="26">
+                     <text_body>
+ If there is a composite key, both master password and key file are required
+                     </text_body>
+                 </req>
+                 <req id="27">
+                     <text_body>
+ In case of lost master password or key file, the database never unlocks again, There is no recovery
+                     </text_body>
+                 </req>
+                 <req id="28">
+                     <text_body>
+ There is no backdoor or key that unlocks all databases
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.17 -->
+         <p id="3.18">
+             <title>Import/Export</title>
+ 
+             <p id="3.18.2">
+                 <title>Functional Requirements</title>
+                 <req id="29">
+                     <text_body>
+ File formats are not specialized password database formats
+                     </text_body>
+                 </req>
+                 <req id="30">
+                     <text_body>
+ File formats only specify a low-level layout of stored data
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.18 -->
+         <p id="3.19">
+             <title>Integration</title>
+ 
+             <p id="3.19.2">
+                 <title>Functional Requirements</title>
+                 <req id="31">
+                     <text_body>
+ Global hot key cannot be changed
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.19 -->
+         <p id="3.20">
+             <title>Password Generator</title>
+             <p id="3.20.2">
+                 <title>Functional Requirements</title>
+                 <text_body>
+ According to restriction rules that are applied every time.
+                 </text_body>
+             </p>
+         </p>        <!-- 3.20 -->
+         <p id="3.21">
+             <title>TAN Support</title>
+ 
+             <p id="3.21.2">
+                 <title>Functional Requirements</title>
+                 <req id="32">
+                     <text_body>
+ Title, username or URL cannot be changed in a TAN entry.
+                     </text_body>
+                 </req>
+                 <req id="33">
+                     <text_body>
+ When a TAN is used, it expires automatically and can never be used again.
+                     </text_body>
+                 </req>
+             </p>
+         </p>        <!-- 3.21 -->
+     </p>    <!-- 3 -->
+     <p id="4">
+         <title>External Interface Requirements</title>
+ 
+         <p id="4.2">
+             <title>Communications Interfaces</title>
+             <text_body>
+                 
+                     Internet connection and a browser are required in order for several functions to be executed such as downloading plugins
+                
+             </text_body>
+         </p>
+     </p>    <!-- 4 -->
+ 
+ </req_document>

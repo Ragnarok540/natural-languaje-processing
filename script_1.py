@@ -134,7 +134,27 @@ if __name__ == '__main__':
     # reqs_1 = create_reqs(results, items_are_reqs=False)
     # reqs += break_lines(reqs_1)
 
-    doc = xml_file_to_dict('datos/2007-ertms.xml')
+    # doc = xml_file_to_dict('datos/2007-ertms.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs_1 = create_reqs(results, items_are_reqs=False)
+    # reqs += break_lines(reqs_1)
+
+    # doc = xml_file_to_dict('datos/2008 - keepass.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs_1 = create_reqs(results, items_are_reqs=False)
+    # reqs += break_lines(reqs_1)
+
+    # doc = xml_file_to_dict('datos/2009 - peppol approved.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs_1 = create_reqs(results, items_are_reqs=True)
+    # reqs += break_lines(reqs_1)
+
+    # doc = xml_file_to_dict('datos/2009 - video search.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs_1 = create_reqs(results, items_are_reqs=True)
+    # reqs += break_lines(reqs_1)
+
+    doc = xml_file_to_dict('datos/2010-blitdraft.xml')
     results = interpret_dict(doc, ['text_body', '#text', 'title'])
     reqs_1 = create_reqs(results, items_are_reqs=False)
     reqs += break_lines(reqs_1)
