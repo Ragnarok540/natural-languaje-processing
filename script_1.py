@@ -1,5 +1,6 @@
 import xmltodict
 import re
+import pandas as pd
 
 def xml_file_to_dict(path: str) -> dict:
     with open(path) as f:
@@ -79,6 +80,14 @@ def write_req_file(name: str, reqs: list):
         for req in reqs:
             f.write(f'{req}\n')
 
+def read_shaukat():
+    shaukat = pd.read_csv('datos/shaukat.csv', header=None)
+    shaukat[0].to_csv('shaukat_proc.txt', header=None, index=None)
+
+def read_nfr():
+    nfr = pd.read_csv('datos/nfr.txt', header=None, sep=':')
+    print(nfr.head())
+    nfr[1].to_csv('nfr_proc.txt', header=None, index=None)
 
 if __name__ == '__main__':
 
@@ -154,9 +163,13 @@ if __name__ == '__main__':
     # reqs_1 = create_reqs(results, items_are_reqs=True)
     # reqs += break_lines(reqs_1)
 
-    doc = xml_file_to_dict('datos/2010-blitdraft.xml')
-    results = interpret_dict(doc, ['text_body', '#text', 'title'])
-    reqs_1 = create_reqs(results, items_are_reqs=False)
-    reqs += break_lines(reqs_1)
+    # doc = xml_file_to_dict('datos/2010-blitdraft.xml')
+    # results = interpret_dict(doc, ['text_body', '#text', 'title'])
+    # reqs_1 = create_reqs(results, items_are_reqs=False)
+    # reqs += break_lines(reqs_1)
 
-    write_req_file('reqs_new.txt', reqs)
+    #read_shaukat()
+
+    read_nfr()
+
+    #write_req_file('reqs_new.txt', reqs)

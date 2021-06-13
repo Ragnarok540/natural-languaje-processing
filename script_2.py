@@ -8,7 +8,10 @@ def num_linkages(requirement: str) -> int:
     child.expect('linkparser> ', timeout=600)
     res = re.search(r'(?<=Found )\w+', child.before)
     child.sendline('exit')
-    return int(res.group(0))
+    if res:
+        return int(res.group(0))
+    else:
+        return 99999
 
 result = []
 reqs = []
