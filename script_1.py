@@ -1,5 +1,6 @@
 import xmltodict
 import re
+import json
 import pandas as pd
 
 def xml_file_to_dict(path: str) -> dict:
@@ -89,6 +90,22 @@ def read_nfr():
     print(nfr.head())
     nfr[1].to_csv('nfr_proc.txt', header=None, index=None)
 
+def read_dronology():
+    with open('datos/dronologydataset01.json') as f:
+        content = f.read()
+
+    dronology = json.loads(content)
+
+    for req in dronology['entries']:
+        requ = req['attributes']['description']
+        if requ:
+          print(f'{req["issueid"]}~{requ}')
+
+def read_dronology_2():
+    nfr = pd.read_csv('datos/drono.csv', header=None, sep='~')
+    print(nfr.head())
+    nfr[1].to_csv('drono_proc.txt', header=None, index=None)
+
 if __name__ == '__main__':
 
     reqs = []
@@ -170,6 +187,10 @@ if __name__ == '__main__':
 
     #read_shaukat()
 
-    read_nfr()
+    #read_nfr()
+
+    #read_dronology()
+
+    read_dronology_2()
 
     #write_req_file('reqs_new.txt', reqs)

@@ -1,0 +1,311 @@
+Each movement command shall specify one of the following command types: SET MONITORING FREQUENCY SET STATE FREQUENCY
+The Route Creation User Interface shall provide capabilities to modify existing routes.
+The Map Component shall support different types of map layers (for example terrain satellite)
+The User Interface Middleware accepts resend waypoint commands associated with a unique unmanned aerial vehicle ID and forwards to Dronology
+unmanned aerial vehicle State messages shall be formatted as JSON objects and contain the unmanned aerial vehicle ID and the MODE
+If a user attempts to create a route without providing a name then the system shall not save the route.
+The display of active flight plans shall include time in flight traveled distance remaining distance completed and total waypoints.
+The active flight plan shall be displayed at the top of the list of pending flight plans.
+The Mission Planner shall execute flight plans for multiple unmanned aerial vehicles concurrently.
+The properties that the ground control station sends to the ground control station Middleware shall be defined in JSON
+The ground control station shall send the unmanned aerial vehicle's current properties to the ground control station Middleware when they are received from the unmanned aerial vehicle.
+The ground control station requests the unmanned aerial vehicle's properties every unmanned aerial vehicle MESSAGE MONITORING FREQUENCY seconds.
+The ground control station shall transmit the unmanned aerial vehicle's properties to the ground control station Middleware
+The ground control station shall send the unmanned aerial vehicle's current coordinates to the ground control station Middleware when they are received from the unmanned aerial vehicle.
+The ground control station requests the unmanned aerial vehicle's current coordinates every unmanned aerial vehicle MESSAGE STATE FREQUENCY seconds.
+The ground control station shall transmit the unmanned aerial vehicle's current location to the ground control station Middleware
+After unmanned aerial vehicle RECONNECT TIMEOUT has been reached if connection to the unmanned aerial vehicle can not be reestablished the ground control station shall send a unmanned aerial vehicle Timeout message containing the unmanned aerial vehicle ID to the ground control station Middleware.
+If the connection to an unmanned aerial vehicle is lost and the ground control station fails to reconnect the ground control station shall notify the ground control station Middleware.
+If the ground control station receives notification that the unmanned aerial vehicle is incorrectly registered then the ground control station closes the connection with the unmanned aerial vehicle.
+The ground control station shall send the home location a time stamp and the unmanned aerial vehicle ID to the ground control station Middleware.
+The ground control station shall report newly connected unmanned aerial vehicles to the ground control station Middleware.
+When the ground control station receives a set frequency command from the ground control station Middleware it shall adjust its messange frequency accordingly.
+Message frequency shall be defined in units of seconds.
+The default message frequency for unmanned aerial vehicle state messages shall be unmanned aerial vehicle MESSAGE STATE FREQUENCY
+The default message frequency for unmanned aerial vehicle monitoring messages shall be unmanned aerial vehicle MESSAGE MON FREQUENCY
+The ground control station shall assign a message frequency for all unmanned aerial vehicles.
+The ground control station shall transform commands into a vehicle specific format.
+When the ground control station receives a unmanned aerial vehicle command from the ground control station Middleware the ground control station shall forward the command to the respective unmanned aerial vehicle.
+When a socket error or time out occurs all unmanned aerial vehicles associated with the ground control station shall be deactivated.
+When the connection to the ground control station from the ground control station Middleware is lost the ground control station Middleware shall notify Dronology and deactivate all associated unmanned aerial vehicles.
+The TAKEOFF command shall specify the target altitude
+The SET VELOCITY shall specify a velocity vector specified using NED (North East Down) directions.
+The SET GROUNDSPEED command shall specify ground speed in meters per second.
+The GOTO WAYPOINT command shall include a target latitude longitude and altitude coordinate
+Each movement command shall specify one of the following command types: GOTO WAYPOINT SET GROUNDSPEED SET VELOCITY TAKEOFF LAND HOVER
+Each command shall include a unique unmanned aerial vehicle ID
+The ground control station Middleware shall forward commands sent from Dronology to a ground control station
+The ground control station Middleware shall be able to handle and send a setStateFrequency command to the respective ground control station containing the desired Frequency in ms.
+The ground control station Middleware shall be able to handle and send a setMonitoringFrequency command to the respective ground control station containing the desired Frequency in ms.
+unmanned aerial vehicle State messages shall be formatted as JSON objects and contain both mandatory and optional elements.
+unmanned aerial vehicle Monitoring messages shall be formatted as JSON objects and contain arbitrary information regarding a single unmanned aerial vehicle.
+The ground control station Middleware shall handle state messages monitoring messages and mode change messages received from an ground control station.
+When the activation request is denied the ground control station Middleware shall send a predefined activation denied message to the ground control station.
+When the activation request is approved the ground control station Middleware shall send a predefined activation confirmation message to the ground control station.
+The ground control station shall be informed of the result of the activation request.
+The ground control station Middleware shall call the unmanned aerial vehicle Activation Manager to request unmanned aerial vehicle activation.
+In step three the ground control station announces its current set of recognized unmanned aerial vehicles to the ground control station Middleware.
+In step two the ground control station Middleware accepts the connection and sends a handshake message.
+The ground control station Middleware shall follow a predefined set of steps to establish a connection between a ground control station and Dronology
+Each ground control station connecting to the ground control station Middleware shall be identified through a unique GROUNDSTATION ID.
+The ground control station Middleware shall only accept one connection for each ground control station.
+The ground control station Middleware shall accept connections with multiple ground control station 
+The ground control station Middleware shall specify a predefined ground control station PORT where ground control station can connect.
+The ground control station Middleware shall handle multiple ground control station
+A monitoring message shall contain a (hierarchical) identifier describing the topic a message type a timestamp and arbitrary serializeable data attached to the message
+The Dronology Runtime Monitor shall be able to receive messages from any Dronology component
+The Dronology Runtime Monitor shall provide means to define wildcards that is a client receives messages from all topics associated with the wildcard
+Topics shall be organized in a hierarchical manner meaning that clients can subscribe to all messages messages from certain ground control station unmanned aerial vehicles and properties
+Clients shall be able to subscribe to any number of topics
+When a new monitoring message is received the Dronology Runtime Monitor shall forward the message to all subscribed clients
+The Dronology Runtime Monitor shall provide functionality to retrieve monitoring messages and distribute them to clients
+When the unmanned aerial vehicle's battery level drops below a predefined threshold then the unmanned aerial vehicle health indicator is activated.
+The Real Time Flight User Interface shall notify users when an emergency occurs.
+When user interface follow mode is active the map should continually zoom and pan so that all selected unmanned aerial vehicles are centered and their active routes constitutes 60% of the view.
+When user interface follow mode is initiated the map shall automatically zoom and pan so that all selected unmanned aerial vehicles are centered and their active routes constitutes 60% of the view.
+The Real Time Flight User Interface shall allow users to follow one or multiple unmanned aerial vehicles on the map.
+When requested by the user the user interface shall apply the requested emergency action to all selected unmanned aerial vehicles if no unmanned aerial vehicle is selected the user interface shall apply the emergency action to all unmanned aerial vehicles by default.
+The Real Time Flight User Interface shall allow users to perform emergency operations (for example hovering multiple unmanned aerial vehicles sending multiple unmanned aerial vehicles to home) to a group of unmanned aerial vehicles
+Operations shall include RTL takeoff hover in place and resend command.
+The Real Time Flight User Interface shall allow users to apply flight operations to one or more selected unmanned aerial vehicles.
+The user interface shall differentiate between completed current and not yet traversed flight segments.
+The Real Time Flight User Interface shall display all currently active flight plans on the map.
+The user interface shall periodically request current locations of all registered unmanned aerial vehicles from the User Interface Middleware and update their locations on the map.
+For each activated unmanned aerial vehicle the user interface shall display information about that unmanned aerial vehicle (that is longitude latitude altitude groud speed battery level etc.) 
+Different types of unmanned aerial vehicles shall have different icons.
+When the map is loaded and the all active unmanned aerial vehicles list is obtained the User Interface Real Time Flight View shall display an icon on the map for each registered unmanned aerial vehicle based on its current location.
+When the Real Time Flight User Interface is loaded a map shall be displayed with the default zoom level and center coordinates specified in a configuration file.
+The user interface shall periodically request the list of all activated unmanned aerial vehicles from the User Interface Middleware and updates the display of currently activated unmanned aerial vehicles
+"Upon loading the user interface shall request information about all activated unmanned aerial vehicles from the User Interface Middleware, Once the User Interface Middleware respond to the request the user interface shall display a list of all currently activated unmanned aerial vehicles."
+The Real Time Flight User Interface shall display the name and status of all currently activated unmanned aerial vehicles
+When the Route Creation User Interface is loaded a list of all existing routes shall be displayed.
+When the user presses the route delete button a confirmation message shall be displayed and if confirmed by the user then the route shall be deleted.
+The Route Creation User Interface shall allow a user to delete a route.
+When selected by the user multiple routes shall be displayed simultaneously on the map.
+Consecutive waypoints in a route on a map shall be connected by lines.
+The Route Creation User Interface shall support route creation and modification in visual mode allowing the user to click on a location in order to create modify or delete a waypoint. 
+The Route Creation User Interface shall support route creation and modification in tabular mode by displaying a editable table showing each waypoint and the velocity of the unmanned aerial vehicle approaching the waypoint.
+The Route Creation User Interface shall allow the user to create and modify a route.
+The route information shall be represented using the Standard Route XML format and transmitted to the User Interface Middleware
+When requested the Route Creation User Interface shall send a newly created or modified route to dronology.
+The user interface shall provide respective fields for displaying and modifying the ID textual description waypoints and other route information.
+Each route shall include a unique ID a textual description and a set of waypoints all of which are editable in the user interface.
+The altitude and speed values shall not exceed the current maximum unmanned aerial vehicle MAX ALTITUDE unmanned aerial vehicle MAX GROUND SPEED set in the system.
+The Route Creation User Interface shall only accept valid altitude and speed values for waypoint.
+Waypoint colors shall be updated as the flight route is edited (for example when a new first or last waypoint is added) If current edits are canceled the colors shall be reset to reflect current waypoints.
+The Route Creation User Interface shall distinguser interfacesh between starting ending and intermediate waypoint markers.
+When the user presses the cancel pending flight plan button a request is sent to the User Interface Middleware to cancel the flight.
+Each unmanned aerial vehicle shall have a cancel pending flight plan button associated with it.
+When a user shall cancels a pending flight plan the Route Assignment User Interface shall notify Dronology.
+Flight plans assigned to an unmanned aerial vehicle that have not yet been executed may be deleted by selecting the route and clicking the deselect button.
+Flight plans assigned to an unmanned aerial vehicle that have not yet been executed may be reordered by dragging a route within the list of assigned routes to a new position.
+A user may reorder routes or remove flight plans assigned to a unmanned aerial vehicle as long as the flight has not started execution.
+When a unmanned aerial vehicle is selected the Route Assignment User Interface shall display its active flight plans.
+When the user requests to view flight plans assigned to a unmanned aerial vehicle the user interface requests the pending flight plans from the unmanned aerial vehicle FlightInfo object and displays them.
+When detailed information is requested by the user for a unmanned aerial vehicle the user interface shall request the unmanned aerial vehicle Data object from the User Interface Middleware.
+When requested by the user the Route Assignment User Interface shall display details about the selected unmanned aerial vehicle and its flight plans.
+When route assignments are removed from a unmanned aerial vehicle a request shall be sent to the User Interface Middleware to remove the assignment in Dronology.
+When a route is assigned or removed from a unmanned aerial vehicle the Route Assignment User Interface shall notify Dronology.
+A route shall be assigned to a selected unmanned aerial vehicle using the mouse to drag and drop or double clicking on the route.
+The user shall select a unmanned aerial vehicle and then assign routes to it from an available route list.
+The Route Assignment User Interface shall provide means to select an existing routes and assign them to a unmanned aerial vehicle.
+Before issuser interfaceng commands to an unmanned aerial vehicle the Vaadin User Interface shall request control via the User Interface Middleware.
+When loading the map view it shall be positioned at the predefined location
+When the Vaadin User Interface is activated the Vaadin User Interface shall be configured according to stored configuration parameters.
+The User Interface Middleware shall forward a mission plan request to dronology.
+The User Interface Middleware shall accept and activate a mission plan upon request.
+The User Interface Middleware shall assign the list of waypoints from a route to an active unmanned aerial vehicle in order to create a flight plan.
+The User Interface Middleware shall enable an existing route to be assigned to an active unmanned aerial vehicle.
+When requested by a user interface client the User Interface Middleware shall support the modification of an existing flight route with an given ID.
+When requested by a user interface client the User Interface Middleware shall create a new flight route with a unique ID.
+The User Interface Middleware shall enable the creation and modification of flight routes
+The User Interface Middleware accepts return to home commands associated with a unique unmanned aerial vehicle ID and forwards to Dronology
+The User Interface Middleware accepts takeoff commands associated with a unique unmanned aerial vehicle ID and forwards to Dronology
+The User Interface Middleware accepts hover in place commands associated with a unique unmanned aerial vehicle ID and forwards to Dronology
+The User Interface Middleware accepts commands from user interfaces and forwards to Dronology
+The User Interface Middleware retrieves and returns a list of previously saved flight routes
+The User Interface Middleware shall provide a list of all existing routes
+The User Interface Middleware returns a list of unmanned aerial vehicle proxy objects containing information about all active unmanned aerial vehicles including location battery level ground speed and health status.
+The User Interface Middleware shall provide a list of all active unmanned aerial vehicles
+If the heartbeat fails for a client holding one or more control locks after CLIENT HEARTBEAT TIME then the User Interface Middleware shall release all of its control locks.
+The User Interface Middleware shall monitor liveness of clients holding control locks on individual unmanned aerial vehicles.
+The user interface middleware shall forward control requests from user interface clients to release a control lock on a unmanned aerial vehicle.
+The User Interface Middleware shall forward control requests from user interface clients to hold a control lock on a unmanned aerial vehicle.
+A client shall register to the User Interface Middleware using a unique id
+While the log level HW TRACE is active each state and monitoring message shall be logged.
+Each connection request handshake and mode change message shall be logged
+Each command sent to a ground control station via the ground control station Middleware shall be logged
+The Activity Logger shall log all commands sent to and messages received from a ground control station.
+"The timestamp and the type of action shall be logged into the mission log for each flight plan related event, This includes (1) time of scheduling (2) time of execution (3) time of completing plan (4) reordering plan (5) canceling plan"
+When a unmanned aerial vehicle reaches a waypoint while executing a flight plan a log event shall be created that includes the coordinates of the waypoint the unmanned aerial vehicle the flight plan is assigned to the flight plan ID and the timestamp.
+When a flight plan is executed a log event shall be created that includes the name of the route the unmanned aerial vehicle it is assigned to and the execution time stamp.
+When a flight plan is initiated a log event shall be created that includes the name of the route the unmanned aerial vehicle it is assigned to and the initiation time stamp.
+The Activity Logger shall log all flight plan related events.
+When a simulated unmanned aerial vehicle is in flight the NVEC Simulator shall reduce the battery every second by SIMULATOR BATTERY DRAIN VOLTS.
+When given a land command the NVEC Simulator shall immediately change the unmanned aerial vehicle's current altitude to the ground altitude.
+While responding to a goto command the NVEC Simulator shall continue moving in steps towards the target coordinates until the target has been reached.
+When given a goto command the NVEC Simulator shall compute the next coordinate based upon the normal vector and altitude of the current position and the normal vector and altitude of the destination.
+The simulator shall move the unmanned aerial vehicle with infinite acceleration and use numerical methods to hone in on the next coordinate which will be SIMULATION STEP SIZE meters from the current position along the travel path.
+When given a takeoff command the NVEC Simulator shall move with infinite acceleration the unmanned aerial vehicle to the takeoff altitude corresponding to its current longitude and latitude.
+When a simulated unmanned aerial vehicle is in flight the Internal Simulator shall reduce the battery every second by SIMULATOR BATTERY DRAIN VOLTS.
+When given a land command the Internal Simulator shall immediately change the unmanned aerial vehicle's current altitude to the ground altitude.
+While responding to a goto command the Internal Simulator shall continue moving in steps towards the target coordinates until the target has been reached.
+When given a goto command the Internal Simulator shall compute the next coordinate based upon the angle of travel and the step size.
+When given a takeoff command the Internal Simulator shall move with infinite acceleration the unmanned aerial vehicle to the takeoff altitude corresponding to its current longitude and latitude.
+The Internal Simulator shall approximate the state of the battery
+When given a landing command the Internal Simulator shall move the unmanned aerial vehicle from to the ground altitude corresponding to its current longitude and latitude.
+When given a goto command the Internal Simulator shall update the location of the unmanned aerial vehicle at increments of SIMULATION STEP SIZE meters moving it towards the target destination until the destination is reached.
+When given a takeoff command the Internal Simulator shall move the unmanned aerial vehicle to the takeoff altitude corresponding to its current longitude and latitude.
+The Internal Simulator shall approximate the behavior of a unmanned aerial vehicle.
+The unmanned aerial vehicle Registration Manager shall store unmanned aerial vehicle metadata information such as the unmanned aerial vehicle's technical characteristics
+The maximum number of activated unmanned aerial vehicles shall be defined as MAX unmanned aerial vehicle
+When the maximum numbers of allowed activated unmanned aerial vehicles has been reached the unmanned aerial vehicle Activation Manager shall reject any further activation requests.
+When a unmanned aerial vehicle is deactivated all scheduled flight plans shall be removed from the unmanned aerial vehicle's flightplan pool.
+When a unmanned aerial vehicle is deactivated the unmanned aerial vehicle Activation Manager shall cancel all current and scheduled flight plans
+If the presented unmanned aerial vehicle ID represents a currently registered unmanned aerial vehicle then the unmanned aerial vehicle Activation Manager shall activate the unmanned aerial vehicle.
+If the presented unmanned aerial vehicle ID does not represent a currently registered unmanned aerial vehicle then the unmanned aerial vehicle Activation Manager will reject the activation and notify the ground control station Middleware
+When receiving a new activation request from the ground control station Middleware the unmanned aerial vehicle Activation Manager shall check that the presented unmanned aerial vehicle ID represents a currently registered and non activated unmanned aerial vehicle.
+If the presented unmanned aerial vehicle ID represents a currently activated unmanned aerial vehicle then the ground control station Middleware will be notified and no additional activation will be performed.
+When a unmanned aerial vehicle is in LANDING state and reaches zero altitude it transitions to ON GROUND
+When a unmanned aerial vehicle is in IN AIR state and receives a command to land it transitions to LANDING state
+When a unmanned aerial vehicle is IN AIR state and is assigned a flight plan to execute it transitions to FLYING
+The system shall support internally simulated unmanned aerial vehicles
+The Vehicle Core shall support virtual unmanned aerial vehicles
+The Vehicle Core shall support unmanned aerial vehicles capable of receiving and responding to commands sent via the ground control station
+The Vehicle Core shall support unmanned aerial vehicles connected via the ground control station
+An internally simulated unmanned aerial vehicle is instantiated with an ID that is unique from the IDs of all other currently activated unmanned aerial vehicles.
+An activation request for a unmanned aerial vehicle that is received from the ground control station Middleware is only accepted if the unmanned aerial vehicle provides an ID unique from all other currently activated unmanned aerial vehicles.
+Each Virtual and Physical drone is associated with a predefined unmanned aerial vehicle TYPE defining its basic attributes.
+If an obstacle is detected within a distance of MIN STOPPING DISTANCE the Object Avoidance system shall issue a 'hover in place' command
+The ObjectAvoidance system shall compute pairwise distances between unmanned aerial vehicles
+The Object Avoidance system shall maintain a list of unmanned aerial vehicle states
+The Object Avoidance system shall retrieve the state of the unmanned aerial vehicles onboard ObjectAvoidance status.
+The Object Avoidance system shall retrieve unmanned aerial vehicle properties and shall check all directives against them.
+When a unmanned aerial vehicle which has been receiving evasive directives is no longer in close proximity to an object the Object Avoidance system shall stop sending directives and the unmanned aerial vehicle will continue towards its destination.
+When a group of unmanned aerial vehicles are assigned flight patterns as part of a mission the system shall provide a warning if any paths overlap.
+A flight pattern shall document the longitude latitude and altitude of waypoints in a flight route as offsets from the starting position of the unmanned aerial vehicle.
+When the flight plan is aborted the unmanned aerial vehicle switches to hover in place mode
+An aborted flight plan shall not be reassigned to any unmanned aerial vehicle
+When the flight plan is aborted it shall be removed from the associated unmanned aerial vehicle.
+If requested the Single unmanned aerial vehicle Flight Plan Scheduler shall abort the currently executing flight plan of an unmanned aerial vehicle
+Each unmanned aerial vehicle can only store one currently executing flight plan ID.
+The currently executing flight plan ID is associated with the unmanned aerial vehicle executing it.
+If a unmanned aerial vehicle does not have any pending flight plans then when it reaches the final waypoint of its current flight plan the Single unmanned aerial vehicle Flight Plan Scheduler shall notify the unmanned aerial vehicle to hover in place.
+If the flight plan queue is not empty when the unmanned aerial vehicle reaches the final waypoint of its current flight plan then the next flight plan is removed from the queue and set as the currently executed flight plan.
+When a unmanned aerial vehicle is issued a return to home command during a flight then the current flight plan is aborted and all scheduled flight plans are removed from its flight plan queue.
+If a flight plan is not assigned to a specific unmanned aerial vehicle the flight plan scheduler shall automatically assign it to the next available unmanned aerial vehicle.
+If a scheduled flight is not manually assigned to a unmanned aerial vehicle the Single unmanned aerial vehicle Flight Plan Scheduler shall assign the route automatically to an unmanned aerial vehicle
+When a flight plan is assigned to a specific unmanned aerial vehicle it shall be placed in the unmanned aerial vehicle's execution queue.
+If a route contains a specific unmanned aerial vehicle ID the Single unmanned aerial vehicle Flight Plan Scheduler shall assign the route to the given unmanned aerial vehicle.
+When a flight route is scheduled for execution its waypoints takeoff altitude and identifier shall be used to instantiate a new flight plan
+When requested the Single unmanned aerial vehicle Flight Plan Scheduler shall schedule a route for execution.
+When requested by the user a currently executing mission plan shall be cancelled by removing all pending flight plans and removing all synchronization points.
+When requested if a mission is currently active the Mission Planner shall cancel the active mission.
+The Flight Pattern for synchronized landing shall direct each unmanned aerial vehicle to synchronize at the final waypoint of the preceding route ascend or descend to a unique altitude synchronize fly to the longitude and latitude of the home coordinates synchronize and then descend to the landing altitude.
+The Flight Pattern for synchronized takeoff shall direct each unmanned aerial vehicle to takeoff to a unique altitude synchronize with other unmanned aerial vehicles fly at the unique altitude to the longitude and latitude of the first waypoint of the subsequent route synchronize with other unmanned aerial vehicles descend or ascend to the target waypoint and synchronize with other unmanned aerial vehicles to complete the flight pattern.
+When a predefined Flight Pattern is included in a MissionPlan it shall be expanded prior to use into a set of waypoints and synchronization points for each of the participating unmanned aerial vehicles.
+The Mission Planner shall manage predefined Flight Patterns
+The MissionPlan shall be specified as a JSON file (see attached example).
+When a unmanned aerial vehicle is executing flight plans and reaches a synchronization point it shall wait to proceed until all other unmanned aerial vehicles sharing the same synchronization point have also reached this point.
+The flight plans of two or more unmanned aerial vehicles shall be synchronized by inserting shared synchronization points between the ordered list of flight routes assigned to each participating unmanned aerial vehicle.
+Each individual unmanned aerial vehicle that is included in a MissionPlan shall have an ordered list of one or more flight routes assigned to it.
+If a unmanned aerial vehicle is in the air when a flight plan is assigned the takeoff altitude in the flight plan is ignored.
+If no takeoff altitude is prescribed in the flight plan assigned to a unmanned aerial vehicle currently on the ground then the system wide default altitude is used as the target takeoff altitude.
+If a takeoff altitude is prescribed in the flight plan assigned to a unmanned aerial vehicle currently on the ground then that altitude is used as the target takeoff altitude.
+When the takeoff command is issued the Flight Scheduling And Execution checks for a prespecified altitude in the flight plan.
+When a flight plan is activated for a unmanned aerial vehicle currently on the ground the Flight Scheduling And Execution shall notify the unmanned aerial vehicle to takeoff vertically until it reaches the prescribed altitude.
+When the unmanned aerial vehicle reaches a target waypoint if additional waypoints are specified in the flight plan then the Vehicle Core shall send the next waypoint to the unmanned aerial vehicle's ground control station.
+If the computed distance from the unmanned aerial vehicle to the target waypoint is less than THRESHOLD WAYPOINT DISTANCE than the waypoint shall be considered reached.
+When the Vehicle Core receives the unmanned aerial vehicle's current coordinates and if the unmanned aerial vehicle has an assigned target waypoint then the Vehicle Core shall compute the current distance to the target waypoint.
+At the start of a flight plan the system shall send the first target waypoint to the unmanned aerial vehicle's ground control station.
+When the hover in place command is rescinded the unmanned aerial vehicle's state is reverted to its previous state.
+If a flight plan is active and the hover in place command is rescinded the Flight Manager shall notify the unmanned aerial vehicle to continue to the originally designated waypoint.
+If the unmanned aerial vehicle is in 'hover in place' mode then no waypoints directives for that unmanned aerial vehicle shall be sent to the ground control station.
+If a flight route is assigned to a unmanned aerial vehicle which is currently hovering in place the Flight Manager shall assign the route and maintain the hover in place mode.
+When the unmanned aerial vehicle is commanded to hover in place its state is changed to hover in place and a command is sent to the ground control station.
+When the hover in place command is issued the Flight Manager shall halt the unmanned aerial vehicle in place and maintain its current position.
+When the unmanned aerial vehicle is commanded to return to home the current flight plan shall be removed and a new flight plan shall be created containing only a single waypoint representing its original launch coordinates.
+Direction between two coordinates shall be specified using a velocity vector from the first coordinate.
+Distances computed between two coordinates shall be accurate within 1 meter over a distance of 400 000 meters.
+When given two coordinates the Coordinate System shall compute the direction from the first coordinate to the second coordinate.
+When given two coordinates the Coordinate System shall compute the distance between them.
+When requested coordinates shall be transformed from p vectors to the default representation.
+When requested coordinates shall be transformed from n vectors to the default representation.
+When requested the Coordinate System shall be transform coordinates from the default representation to p vectors.
+When requested the Coordinate System shall transform coordinates transformed from the default representation to n vectors.
+The default coordinate representation shall use LLA (longitude latitude altitude) format.
+When requested the Coordinate System shall transform coordinates to alternate formats.
+The flight route xml format includes an optional takeoff altitude tag
+When a flight route requser interfaceres a customized takeoff altitude that differs from the system's default takeoff altitude it shall be specified in the flight route.
+When the User Interface Middleware requests a flight route identified by its unique name the Fligh Route Manager shall retrieve the associated file.
+When a flight route is uploaded to Dronology the Flight Route Manager shall save it under a unique name as an xml file.
+The Flight Route Manager shall persist flight routes.
+Upon receipt of a new or modified flight route from the user interface middleware the Flight Route Manager shall check that it is a VALID FLIGHT ROUTE that is that all waypoints are valid coordinates and that the flight route contains at least one waypoint.
+The Flight Route Manager shall ensure that all flight routes represent a VALID FLIGHT ROUTE.
+Flight routes shall be specified in the standard XML FlightRoute format.
+The Flight Route Manager shall define flight routes as an ordered sequence of waypoints in which the first waypoint represents the first target location and the final waypoint represents the final target location.
+When a mode change message to USER CONTROLLED is received the Vehicle shall transition to USER CONTROLLED.
+When a unmanned aerial vehicle is executing flight plans and reaches a synchronization point which is followed by a delay task it shall wait to proceed until the delay specified in seconds is expired
+The Mission Planner shall provide an interface to support the execution of predefined missions specified in JSON.
+The Dronology Runtime Monitor shall allow to publish arbitrary monitoring messages and subscribe to certain message types
+The open street map component shall support multiple map providers.
+When the return to home command is issued the Flight Manager shall return the unmanned aerial vehicle to its original launch location without issuser interfaceng any additional waypoint or routing commands.
+Waypoints in a flight route shall be colored so as to differentiate between the starting waypoint ending waypoint and all remaining intermediate waypoints.
+The Mission Planner shall synchronize and coordinate the flights of multiple unmanned aerial vehicles.
+In step one the ground control station announces itself to the ground control station Middleware providing its unique ID.
+The ground control station Middleware shall handle multiple ground control station at the same time.
+When routes are assigned to a unmanned aerial vehicle a request shall be sent to the User Interface Middleware to update the assignment in Dronology.
+When the ground control station loses the connection to an unmanned aerial vehicle the ground control station shall attempt to reconnect
+The user interface shall display the waypoints and their connections.
+All commands sent to and messages received from a ground control station shall be logged to a dedicated ground control station log file
+Position reckoning shall utilize the WGS 84 reference system.
+"Upon loading the user interface requests all existing routes from the User Interface Middleware, Once the User Interface Middleware respond to the request the user interface displays all existing routes"
+The unmanned aerial vehicle Activation Manager shall only activate unmanned aerial vehicles that are registered.
+When a ground control station requests activation of a newly detected unmanned aerial vehicle the ground control station Middleware shall forward the request to Dronology.
+When a unmanned aerial vehicle has an active onboard Obstacle Avoidance then the Obstacle Avoidance system shall not issue directives
+The Object Avoidance system only issues commands within the capabilities of the unmanned aerial vehicle
+If a unmanned aerial vehicle takes evasive actions the system will ensure that it will eventually reach its destination
+When a stationary or moving object is within the proximity of a unmanned aerial vehicle the Object Avoidance system shall issue evasive directives to the unmanned aerial vehicle
+Configuration parameters including map coordinates scale map style and color scheme shall be stored in a JSON Object on the server
+The unmanned aerial vehicle location shall be updated on the map at the currently defined user interface unmanned aerial vehicle REFRESH RATE
+The Real Time Flight User Interface shall display the location of active unmanned aerial vehicles as icons on the map.
+Unless otherwise configured in the configuration parameters the map shall be centered at White Field University of Notre Dame South Bend IN.
+When loading the map it shall be scaled as specified in the configuration.
+If no scale information is provided in the configuration the map shall display at a scale of MAP DEFAULT SCALE.
+When the Real Time Flight User Interface is loaded a map shall be displayed.
+The name state battery level speed and current coordinates of each unmanned aerial vehicle shall be displayed.
+If a command is issued by the Vaadin User Interface for an unmanned aerial vehicle the Vaadin User Interface shall request control of that unmanned aerial vehicle.
+The User Interface Middleware shall only assign one control client at a time for each unmanned aerial vehicle.
+The User Interface Middleware shall provide an interface for registering user interface clients.
+All flight plans executed and waypoints reached shall be logged to a dedicated flight log file.
+When a unmanned aerial vehicle's current flight is cancelled the Single unmanned aerial vehicle Flight Plan Scheduler shall in turn cancel all scheduled flight plans for that unmanned aerial vehicle.
+If a unmanned aerial vehicle has pending flight plans then when it reaches the final waypoint of its current flight plan the Single unmanned aerial vehicle Flight Plan Scheduler shall execute the next assigned flight plan.
+If requested the Single unmanned aerial vehicle Flight Plan Scheduler shall unassign the flight plan assigned to a unmanned aerial vehicle that is awaiting execution.
+A flight plan shall be unassigned from a unmanned aerial vehicle by removing it from the unmanned aerial vehicle's flight plan queue.
+The Single unmanned aerial vehicle Flight Plan Scheduler shall maintain a managed list of pending flight plans for Each unmanned aerial vehicle.
+The pending flight plans of a unmanned aerial vehicle may be reordered
+By default the pending flight plansof a unmanned aerial vehicle's shall be serviced in FCFS order.
+If the flight plan queue is empty when the unmanned aerial vehicle reaches the final waypoint of its current flight plan then its state is set to IN AIR.
+When a flight plan is executed the Vehicle Core shall send the next waypoint to the unmanned aerial vehicle.
+Each waypoint shall be specified using coordinates that include longitude latitude and altitude.
+Flight routes shall be created externally and uploaded to Dronology via the user interface middleware.
+The Vehicle Core shall associate a unmanned aerial vehicle TYPE for each unmanned aerial vehicle defining its basic attributes.
+The unmanned aerial vehicle Activation Manager shall ensure that only one instance of each registered drone is active at any time.
+When a unmanned aerial vehicle is in FLYING state and has no currently executing flight plan it transitions to IN AIR
+When a unmanned aerial vehicle in the TAKING OFF state achieves the target altitude it transitions to FLYING state.
+When permission is granted to unmanned aerial vehicle in the AWAITING TAKEOFF CLEARANCE state it transitions to TAKING OFF state.
+When a flight plan is assigned to a unmanned aerial vehicle in the ON GROUND state it transitions to the AWAITING TAKEOFF CLEARANCE state.
+The Single unmanned aerial vehicle Flight Plan Scheduler shall only execute one flight plan at a time for each unmanned aerial vehicle.
+Each unmanned aerial vehicle has zero or more pending flight plans.
+When a unmanned aerial vehicle is initially activated on the ground it is in the ON GROUND state
+The Vehicle Core shall assign a unique ID to each activated unmanned aerial vehicle.
+Altitude shall be specified in meters
+All waypoints shall be specified using degrees longitude and latitude using Decimal Degrees format
+A client may register with the User Interface Middleware to receive notifications whenever unexpected events occur.
+A client shall register with the User Interface Middleware to receive notifications whenever unmanned aerial vehicle instances are activated or deactivated.
+A client shall register with the User Interface Middleware to receive notifications whenever a new flight plan is activated or executed
+A client shall register with the User Interface Middleware to receive notifications whenever a new unmanned aerial vehicle type configuration is created modified or deleted.
+A client shall register with the User Interface Middleware to receive unmanned aerial vehicle type specification events whenever a new unmanned aerial vehicle type specification is created modified or deleted.
+A client shall register with the User Interface Middleware to receive flight route event notifications whenever a flight route is created modified or deleted.
+If a client registers for notifications the User Interface Middleware shall send notifications for specific events
+When requested the Vehicle Core shall transition the unmanned aerial vehicle between states according to allowed state transitions as depicted in the unmanned aerial vehicle state transition diagram
